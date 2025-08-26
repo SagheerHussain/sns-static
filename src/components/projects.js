@@ -242,6 +242,45 @@ export const portfolios = [
     createdAt: "2025-05-09T08:24:49.155Z",
     __v: 0,
   },
+  {
+    _id: "681dbbd1ad86b54ea81f1488",
+    src: "https://res.cloudinary.com/duegs3psb/image/upload/v1744795037/portfolio_images/florida_master.png",
+    categories: [
+      {
+        _id: "67af141e2bbc22e8d6871ff9",
+        name: "Web Development",
+        slug: "web-development",
+        createdAt: "2025-02-14T09:59:58.633Z",
+        __v: 0,
+      },
+      {
+        _id: "67a634c1b4819ef306eb39a4",
+        name: "Web Design",
+        slug: "web-design",
+        createdAt: "2025-02-07T16:28:49.678Z",
+        __v: 0,
+      },
+      {
+        _id: "679c65288b04ccb2dea6af07",
+        name: "Wordpress Development",
+        slug: "wordpress-development",
+        createdAt: "2025-01-31T05:52:40.652Z",
+        __v: 0,
+      },
+      {
+        _id: "681aebe011d73947784577b9",
+        name: "Content Writing",
+        slug: "content-writing",
+        createdAt: "2025-05-07T05:13:04.812Z",
+        __v: 0,
+      },
+    ],
+    title: "Florida Habru Towards",
+    description: "",
+    link: "https://floridahebrewtours.com/",
+    createdAt: "2025-05-09T08:24:49.155Z",
+    __v: 0,
+  },
 ];
 
 export const categories = [

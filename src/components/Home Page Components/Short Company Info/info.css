@@ -1,6 +1,6 @@
 .info-video-content:hover .info-video-icon {
     background-color: #fff !important;
-    color: #113766 !important;
+    color: #111 !important;
 }
 
 .info-video-content:hover .info-video-icon::before {

@@ -1,5 +1,5 @@
 #footer {
-    background: radial-gradient(circle, rgba(4, 115, 189, 1) 40%, rgba(1, 100, 166, 1) 78%) !important;
+    background: radial-gradient(circle, rgb(5, 5, 5) 40%, rgba(5, 5, 5, 1) 78%) !important;
 }
 
 #footer .footer-menus-links::before {
@@ -10,7 +10,7 @@
     display: inline-block;
     width: 1px;
     height: 400px;
-    background-color: #0195f1;
+    background-color: #333;
     transform: translateX(-35px);
 }
 

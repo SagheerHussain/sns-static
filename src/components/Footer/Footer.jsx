@@ -59,7 +59,7 @@ const Footer = ({ className }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-32 flex items-center">
+                    <div className="row mt-40 flex items-center">
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-6">
                             <Logo src={logoSrc} />
                         </div>
@@ -70,7 +70,7 @@ const Footer = ({ className }) => {
                     <div className="row mt-4 g-4">
                         <div className="col-xl-3 col-lg-4 col-md-6">
                             <div className="footer-company-location mx-[1rem] footer-company-location-one flex items-center">
-                                <div className="footer-company-location-logo text-[#298aca] text-[4rem] font-extrabold">
+                                <div className="footer-company-location-logo text-[#04e4ff] text-[4rem] font-extrabold">
                                     <h1 className="logo">KH</h1>
                                 </div>
                                 <div className="footer-company-location-address mt-[1rem] ms-4">

@@ -38,7 +38,7 @@ const Navbar = ({
     return (
         <>
             <nav id='navbar' className={`navbar w-full fixed top-0 min-h-[10vh] left-0 z-[999] transition-all duration-500 ease-in-out border-b border-b-[#ffffff22]
-                ${isScrollingUp ? `translate-y-0 ${isAtTop ? "" : "bg-[#33217f]/50 backdrop-blur-[10px] shadow-lg"}` : "-translate-y-full"} 
+                ${isScrollingUp ? `translate-y-0 ${isAtTop ? "" : "bg-[#111]/50 backdrop-blur-[10px] shadow-lg"}` : "-translate-y-full"} 
             `}>
                 <div className="container-fluid flex items-center justify-between px-4 sm:px-8 py-2">
                     <div className="logo">

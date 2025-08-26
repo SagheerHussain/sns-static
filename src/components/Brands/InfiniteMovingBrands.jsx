@@ -5,7 +5,7 @@ const InfiniteMovingBrands = ({
     height = "h-[10vh]",
     className = "",
     brand = [],
-    bgColor = "bg-[#00042a]",
+    bgColor = "bg-[#000]",
     ...props
 }) => {
     return (

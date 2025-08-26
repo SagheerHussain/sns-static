@@ -20,7 +20,7 @@ const ScrollToTop = () => {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed transition-all duration-300 bottom-[30px] right-[30px] scroll_to_top bg-[#1092fd] hover:bg-[#38a4fc] ${isScrollY ? "opacity-100 visible" : "opacity-0 invisible"} shadow-lg`}
+            className={`fixed transition-all duration-300 bottom-[30px] right-[30px] scroll_to_top bg-[#333] hover:bg-[#444] ${isScrollY ? "opacity-100 visible" : "opacity-0 invisible"} shadow-lg`}
         >
             <FaArrowUp className='text-white text-[2.5rem] p-[10px]' />
         </button>

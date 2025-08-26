@@ -9,7 +9,7 @@ const Testimonials = () => {
 
     return (
         <>
-            <section id="testimonials" className='py-20' style={{ background: 'linear-gradient(90deg, rgb(16,5,51) 3%, rgba(28,5,55) 50%, rgb(16,5,51) 75%)' }}>
+            <section id="testimonials" className='py-20' style={{ background: 'linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(9,9,9,1) 44%, rgba(1,1,1,1) 75%)' }}>
                 <div className="container mb-14">
                     <div className="row">
                         <div className="col-12 text-center">

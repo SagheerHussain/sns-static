@@ -18,13 +18,13 @@ const Services = ({ title, description, services = [], ...props }) => {
     <>
       <section
         id="services"
-        className="py-20 bg-[#00042a] relative overflow-clip"
+        className="py-20 bg-[#000] relative overflow-clip"
       >
         <div className="container">
           <div className="lg:flex g-4">
             <div className="w-full lg:w-2/5 service-intro-column">
               <div className="service-intro sticky top-0 p-[2rem]">
-                <h3 className="text-sky-500 font-semibold text-xl mb-4">
+                <h3 className="text-[#04e4ff] font-semibold text-xl mb-4">
                   WHY SKYNET SILICON?
                 </h3>
                 <h1 className="text-white font-bold text-3xl md:text-4xl xl:text-6xl">
@@ -40,12 +40,12 @@ const Services = ({ title, description, services = [], ...props }) => {
             </div>
             <div className="service_detail_before_effect w-full lg:w-3/5">
               <Link to="/service/web-design">
-                <div className="service-detail group mb-4 bg-[#070b30] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
+                <div className="rounded-[20px] service-detail group mb-4 bg-[#111] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
                   <div
                     className="service-detail-wrapper block absolute top-0 left-0 w-full h-full z-[-1] invisible transition-all duration-300 opacity-0 bg-white"
                     style={{ background: `url(${custom_web_image})` }}
                   ></div>
-                  <TbDeviceDesktopStar className="text-white text-8xl border-2 border-sky-500 rounded-full p-3" />
+                  <TbDeviceDesktopStar className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3 group-hover:text-[#00042a]">
                     Unique Web Design
                   </h3>
@@ -64,13 +64,13 @@ const Services = ({ title, description, services = [], ...props }) => {
                 </div>
               </Link>
               <Link to="/service/redesign-identity">
-                <div className="service-detail mb-4 bg-[#070b30] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
+                <div className="rounded-[20px] service-detail mb-4 bg-[#111] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
                   <div
                     className="service-detail-wrapper block absolute top-0 left-0 w-full h-full z-[-1] invisible transition-all duration-300 opacity-0 bg-white"
                     style={{ background: `url(${redesign_web_image})` }}
                   ></div>
 
-                  <VscSettingsGear className="text-white text-8xl border-2 border-sky-500 rounded-full p-3" />
+                  <VscSettingsGear className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Redesigning a Website
                   </h3>
@@ -88,36 +88,14 @@ const Services = ({ title, description, services = [], ...props }) => {
                   <div className="overlay-circle-two block rounded-full absolute blur-2xl invisible opacity-0 transition-all duration-300 ease-in-out w-[270px] h-[270px] bg-[#00b9ff] right-[-10%] top-[20%]"></div>
                 </div>
               </Link>
-              {/* <div className="service-detail mb-4 bg-[#070b30] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
-                <div
-                  className="service-detail-wrapper block absolute top-0 left-0 w-full h-full z-[-1] invisible transition-all duration-300 opacity-0 bg-white"
-                  style={{ background: `url(${responsive_web_image})` }}
-                ></div>
-
-                <MdOutlineSendToMobile className="text-white text-8xl border-2 border-sky-500 rounded-full p-3" />
-                <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
-                  Designing Responsively
-                </h3>
-                <p className="text-white font-semibold text-lg mt-8 w-[100%] lg:w-[485px] xl:w-[625px] 2xl:w-[770px]">
-                  Across all platforms, we provide flawless user experiences.
-                  Your website will not only meet but beyond user expectations
-                  thanks to our responsive designs, which seamlessly adjust to
-                  any screen size. Regardless of how a visitor arrives at your
-                  website, we guarantee a consistent, captivating experience
-                  from strategy to design and production.
-                </p>
-
-                <div className="overlay-circle-one block rounded-full absolute blur-2xl invisible opacity-0 transition-all duration-300 ease-in-out w-[320px] h-[320px] bg-[#7e57c2] right-0 bottom-[-50%]"></div>
-                <div className="overlay-circle-two block rounded-full absolute blur-2xl invisible opacity-0 transition-all duration-300 ease-in-out w-[270px] h-[270px] bg-[#00b9ff] right-[-10%] top-[20%]"></div>
-              </div> */}
               <Link to="/service/search-engine-optimization">
-                <div className="service-detail mb-4 bg-[#070b30] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
+                <div className="rounded-[20px] service-detail mb-4 bg-[#111] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
                   <div
                     className="service-detail-wrapper block absolute top-0 left-0 w-full h-full z-[-1] invisible transition-all duration-300 opacity-0 bg-white"
                     style={{ background: `url(${seo_web_image})` }}
                   ></div>
 
-                  <FaMagnifyingGlassChart className="text-white text-8xl border-2 border-sky-500 rounded-full p-3" />
+                  <FaMagnifyingGlassChart className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Search Engine Optimization
                   </h3>
@@ -135,13 +113,13 @@ const Services = ({ title, description, services = [], ...props }) => {
                 </div>
               </Link>
               <Link to="/service/graphic-designing">
-                <div className="service-detail mb-4 bg-[#070b30] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
+                <div className="rounded-[20px] service-detail mb-4 bg-[#111] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
                   <div
                     className="service-detail-wrapper block absolute top-0 left-0 w-full h-full z-[-1] invisible transition-all duration-300 opacity-0 bg-white"
                     style={{ background: `url(${uiux_web_image})` }}
                   ></div>
 
-                  <MdOutlineDesignServices className="text-white text-8xl border-2 border-sky-500 rounded-full p-3" />
+                  <MdOutlineDesignServices className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Graphic Design
                   </h3>
@@ -159,13 +137,13 @@ const Services = ({ title, description, services = [], ...props }) => {
                 </div>
               </Link>
               <Link to={`/service/ecommerce-development`}>
-                <div className="service-detail mb-4 bg-[#070b30] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
+                <div className="rounded-[20px] service-detail mb-4 bg-[#111] px-[4rem] py-[3rem] relative overflow-hidden w-full z-[999] hover:w-[60vw] cursor-pointer">
                   <div
                     className="service-detail-wrapper block absolute top-0 left-0 w-full h-full z-[-1] invisible transition-all duration-300 opacity-0 bg-white"
                     style={{ background: `url(${ecommerce_web_image})` }}
                   ></div>
 
-                  <RiLuggageCartLine className="text-white text-8xl border-2 border-sky-500 rounded-full p-3" />
+                  <RiLuggageCartLine className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Design and Development for Ecommerce
                   </h3>

@@ -12,7 +12,7 @@ const Info = () => {
 
     return (
         <>
-            <section id="short_company_info" className='py-16 bg-[#00042a] overflow-x-hidden'>
+            <section id="short_company_info" className='py-16 bg-[#000] overflow-x-hidden'>
                 <div className="container">
                     <div className="lg:flex">
                         <div className="lg:w-1/2 w-full">
@@ -35,7 +35,7 @@ const Info = () => {
                                 The goal of the web design and digital marketing firm Skynet Silicon is to help brands expand their online presence. To increase brand engagement and conversions, we provide digital marketing solutions, successful brand strategies, and unique site design and development. To guarantee that every project satisfies our clients' brand standards and commercial objectives, we collaborate closely with them. We also offer technical and marketing know-how to guarantee the best outcomes.</p>
                         </div>
                         <div className="lg:w-1/2 w-full lg:mt-0 mt-[2rem]">
-                            <img src={solutionImg} alt="" />
+                            <img src={solutionImg} className="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
                 </div>

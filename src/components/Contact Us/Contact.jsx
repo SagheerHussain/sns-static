@@ -11,8 +11,7 @@ import { BeatLoader } from "react-spinners";
 import PhoneInput from "react-phone-input-2";
 import { Link } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
-import { getCategories } from "../../../services/categories";
-import { useQuery } from "@tanstack/react-query";
+import { categories } from "../categories";
 
 const Contact = () => {
   // Error Handling
@@ -20,17 +19,6 @@ const Contact = () => {
   const [error, setError] = useState(false);
   const [phone, setPhone] = useState("");
   const [captchaValue, setCaptchaValue] = useState("");
-
-  // Fetching Categories
-  const {
-    data: categories,
-    isLoading: categoriesLoading,
-    error: categoriesError,
-  } = useQuery({
-    queryKey: ["categories"],
-    queryFn: getCategories,
-    staleTime: 1800000,
-  });
 
   // Form
   const {
@@ -128,7 +116,7 @@ const Contact = () => {
               <h4 className="text-white uppercase text-2xl font-bold mb-3">
                 Take The Silk Road To
               </h4>
-              <h1 className="text-sky-400 font-bold text-4xl sm:text-5xl">
+              <h1 className="text-[#04e4ff] font-bold text-4xl sm:text-5xl">
                 Digitizing Your Business <br /> Growth
               </h1>
               <div className="follow-us flex items-center mt-5">
@@ -259,7 +247,7 @@ const Contact = () => {
                       {categories?.map(({ _id, name }) => (
                         <option
                           value={name}
-                          className="bg-[#00042a] border-2 border-[#00042a]"
+                          className="bg-[#000] border-2 border-[#000]"
                           key={_id}
                         >
                           {name}

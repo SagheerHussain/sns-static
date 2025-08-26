@@ -101,7 +101,7 @@ export const InfiniteMovingCards = ({
             :
             <li
               key={item.src}
-              className={`${itemClass} relative p-6 max-w-lg mx-auto text-white overflow-hidden bg-[#4c86d21a]`}
+              className={`${itemClass} relative p-6 max-w-lg mx-auto text-white overflow-hidden bg-[#111]`}
             >
               <div className="relative flex items-center justify-between">
                 <div className="company_info">

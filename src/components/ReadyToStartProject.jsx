@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ReadyToStartProject = () => {
     return (
         <>
-            <section id="ready_to_start_project" className='py-32 bg-[#260c6e] relative'>
+            <section id="ready_to_start_project" className='py-32 bg-[#000] relative'>
                 <div className="container">
                     <div className="read_project_title relative">
                         {["Ready", "To Start", "The Project?"].map((string) => (

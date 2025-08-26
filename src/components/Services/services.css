@@ -41,17 +41,17 @@
     top: 50%;
     left: 20%;
     transform: translateY(-50%);
-    background: radial-gradient(ellipse at center, rgb(119, 17, 177, .8) 0%, rgba(4, 228, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, rgba(108, 108, 108, 0.8) 0%, rgba(4, 228, 255, 0) 70%);
 }
 .service-intro-column::before {
     bottom: 60%;
     left: -20%;
-    background: radial-gradient(ellipse at center, rgba(4, 228, 255, 0.8) 0%, rgba(4, 228, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, rgba(105, 105, 105, 0.8) 0%, rgba(4, 228, 255, 0) 70%);
 }
 .service-intro-column::after {
     bottom: 45%;
     right: -20%;
-    background: radial-gradient(ellipse at center, rgba(4, 228, 255, 0.8) 0%, rgba(4, 228, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, rgba(105, 105, 105, 0.8) 0%, rgba(4, 228, 255, 0) 70%);
 }
 
 

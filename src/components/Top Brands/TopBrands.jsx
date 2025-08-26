@@ -23,7 +23,7 @@ const TopBrands = () => {
 
     return (
         <>
-            <section id="topBrands" data-scroll-section className='pt-20 pb-12' style={{ background: 'linear-gradient(90deg, rgba(0,15,55,1) 3%, rgba(2,100,167,1) 44%, rgba(32,15,82,1) 75%)' }}>
+            <section id="topBrands" data-scroll-section className='pt-20 pb-12' style={{ background: 'linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(9,9,9,1) 44%, rgba(1,1,1,1) 75%)' }}>
                 <div className="container mb-20">
                     <div className="row">
                         <div className="col-12 text-center">
@@ -37,7 +37,7 @@ const TopBrands = () => {
                         </div>
                     </div>
                 </div>
-                <InfiniteMovingBrands height='18vh' bgColor='' className='bg-[#4c86d21a] flex flex-column justify-center items-center py-4' brand={workingBrands} />
+                <InfiniteMovingBrands height='18vh' bgColor='' className='bg-[#000] flex flex-column justify-center items-center py-4' brand={workingBrands} />
                 {/* <div className="flex justify-center mt-14">
                     <Button className='primary-btn text-white hover:text-white' label={"EXPLORE ALL SERVICES"} />
                 </div> */}

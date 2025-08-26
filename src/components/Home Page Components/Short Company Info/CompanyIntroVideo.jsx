@@ -15,7 +15,7 @@ const CompanyIntroVideo = () => {
 
     return (
         <>
-            <div id="company_intro_video" className='bg-[#00042a] relative overflow-x-hidden company_intro_video company_intro_video_after after:content-[""] after:block after:absolute after:top-[50%] after:left-0 after:translate-x-[320px] after:translate-y-[-50%] after:w-screen after:h-[70px] z-0 after:bg-gradient-to-r from-[#791BCE] to-[rgba(143,53,225,0)]'>
+            <div id="company_intro_video" className='bg-[#000] relative overflow-x-hidden company_intro_video company_intro_video_after after:content-[""] after:block after:absolute after:top-[50%] after:left-0 after:translate-x-[320px] after:translate-y-[-50%] after:w-screen after:h-[70px] z-0 after:bg-gradient-to-r from-[#101010] to-[rgba(143,53,225,0)]'>
                 <div className="container company_intro_video_container info-video-container">
                     <div className="row flex items-center g-0">
                         <div className="col-12 company_intro_video_content info-video-content z-50 flex items-center">
