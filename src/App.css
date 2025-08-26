@@ -59,6 +59,7 @@ Buttons Classes Start
     width: 0;
     height: 500px;
     transition: all .6s ease-in-out;
+    background: linear-gradient(to top, #913ae4, #0898ff);
     z-index: -1;
     transform: rotate(-50deg) translateY(-150px);
     opacity: 0;

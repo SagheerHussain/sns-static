@@ -11,14 +11,14 @@ const WhyUs = ({
                 <div className="container text-center">
                     <div className="why_we_use_content">
 
-                        <h2 className='text-4xl font-bold mb-10'>For a Top-Performing, You Need <span className='text-[#1092fd]'>{service.category.name || "Loading Service..."}.</span> <br /> Here’s Why</h2>
+                        <h2 className='text-4xl font-bold mb-10'>For a Top-Performing, You Need <span className='text-[#04e4ff]'>{service.category.name || "Loading Service..."}.</span> <br /> Here’s Why</h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
                             {
                                 service.why_you_need_service?.slice(0, 6).map((serv, index, arr) => {
                                     console.log(arr)
                                     return (
-                                        <div className={`relative text-center why_us_content ${index % 2 !== 0 ? "bg-[#1092fd]" : "bg-[#222]"} rounded-[0px] p-10`}>
+                                        <div className={`relative text-center why_us_content ${index % 2 !== 0 ? "bg-[#04e4ff]" : "bg-[#222]"} rounded-[0px] p-10`}>
                                             <GlowingEffect
                                                 blur={1}
                                                 spread={50}
@@ -28,8 +28,8 @@ const WhyUs = ({
                                                 proximity={64}
                                                 inactiveZone={0.01}
                                             />
-                                            <h2 className={` text-white  text-2xl font-semibold`}>{serv.title}</h2>
-                                            <p className={`text-white mt-6 text-sm`}>{serv.description}</p>
+                                            <h2 className={`${index % 2 !== 0 ? "text-[#000]" : "text-white"} text-2xl font-semibold`}>{serv.title}</h2>
+                                            <p className={`${index % 2 !== 0 ? "text-[#000]" : "text-white"} mt-6 text-sm`}>{serv.description}</p>
                                         </div>
                                     )
                                 })

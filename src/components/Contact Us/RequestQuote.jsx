@@ -4,20 +4,9 @@ import Swal from "sweetalert2";
 import PhoneInput from "react-phone-input-2";
 import { BeatLoader } from "react-spinners";
 import ReCAPTCHA from "react-google-recaptcha";
-import { getCategories } from "../../../services/categories";
-import { useQuery } from "@tanstack/react-query";
+import { categories } from "../categories";
 
 const RequestQuote = () => {
-  // Fetching Categories
-  const {
-    data: categories,
-    isLoading: categoriesLoading,
-    error: categoriesError,
-  } = useQuery({
-    queryKey: ["categories"],
-    queryFn: getCategories,
-    staleTime: 1800000,
-  });
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -75,18 +64,9 @@ const RequestQuote = () => {
     }
   };
 
-  // // Fetching Categories
-  // useEffect(() => {
-  //     (async () => {
-  //         const response = await fetch("https://skynetsilicon-website-backend.vercel.app/api/category");
-  //         const data = await response.json();
-  //         setCategories(data);
-  //     })()
-  // }, [])
-
-  // ReCaptcha Change
   // ReCaptcha Change
   const handleCaptchaChange = async (value) => {
+    console.log("Captcha Value:", value);
     // Step 1: Verify reCAPTCHA with the backend
     const recaptchaResponse = await fetch(
       `${import.meta.env.VITE_BASE_URL}/verify-recaptcha`,
@@ -103,10 +83,10 @@ const RequestQuote = () => {
     setCaptchaValue(value);
 
     if (!recaptchaData.success) {
-      Swal.fire({
-        icon: "error",
-        title: "reCAPTCHA verification failed! Try again.",
-      });
+      // Swal.fire({
+      //   icon: "error",
+      //   title: "reCAPTCHA verification failed! Try again.",
+      // });
       setLoading(false);
       return;
     }
@@ -114,8 +94,8 @@ const RequestQuote = () => {
 
   return (
     <>
-      <h3 className="text-[#1092fd] text-3xl font-bold">Request A Quote</h3>
-      <h2 className="text-[#123c76] font-bold leading-snug text-3xl mt-6">
+      <h3 className="text-[#04e4ff] text-3xl font-bold">Request A Quote</h3>
+      <h2 className="text-[#000] font-bold leading-snug text-3xl mt-6">
         Maximize Your Potential With Skynet Silicon
       </h2>
       <form action="" onSubmit={handleSubmit(handleContactForm)}>
@@ -240,7 +220,7 @@ const RequestQuote = () => {
               captchaValue
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-50 pointer-events-none"
-            } primary-white-btn border-2 border-[#006cae] hover:text-white`}
+            } primary-white-btn border-2 border-[#000] hover:text-white`}
           >
             {loading ? <BeatLoader size={12} color="#fff" /> : "Submit"}
           </button>

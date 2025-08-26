@@ -11,12 +11,12 @@ const WhyWeUse = ({
                     <div className="container text-center">
                         <div className="why_we_use_content">
 
-                            <h2 className='text-4xl font-bold mb-10'>Why Choose <span className='text-[#1092fd]'>Skynet Silicon For {service.category.name || "Loading Service..."}</span></h2>
+                            <h2 className='text-4xl font-bold mb-10'>Why Choose <span className='text-[#04e4ff]'>Skynet Silicon For {service.category.name || "Loading Service..."}</span></h2>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
                                 {
                                     service.why_choose_skynet?.map(({ _id, title, description, }, ind) => (
-                                        <div className={`relative text-center h-[200px] rounded-none flex items-center flex-col justify-center m-px ${ind % 2 !== 0 ? "bg-[#1092fd]" : "bg-[#181818]"} p-3`}>
+                                        <div className={`relative text-center h-[200px] rounded-none flex items-center flex-col justify-center m-px ${ind % 2 !== 0 ? "bg-[#04e4ff]" : "bg-[#181818]"} p-3`}>
                                             <GlowingEffect
                                                 blur={1}
                                                 spread={50}
@@ -26,8 +26,8 @@ const WhyWeUse = ({
                                                 proximity={64}
                                                 inactiveZone={0.01}
                                             />
-                                            <h2 className='text-white text-2xl font-semibold'>{title}</h2>
-                                            <p className='text-white mt-6 text-sm'>{description}</p>
+                                            <h2 className={`${ind % 2 !== 0 ? "text-[#000]" : "text-white"} text-2xl font-semibold`}>{title}</h2>
+                                            <p className={`${ind % 2 !== 0 ? "text-[#000]" : "text-white"} mt-6 text-sm`}>{description}</p>
                                         </div>
                                     ))
                                 }

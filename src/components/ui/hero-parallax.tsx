@@ -58,7 +58,7 @@ export const HeroParallax = ({
     return (
         <div
             ref={ref}
-            className={`${isClick ? "h-screen" : "h-[300vh] xl:h-[2500px]"} py-40 overflow-hidden bg-[#00042a]  flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]`}
+            className={`${isClick ? "h-screen" : "h-[300vh] xl:h-[2500px]"} py-40 overflow-hidden bg-[#000]  flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]`}
         >
             <Header />
 
@@ -105,7 +105,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
     return (
-        <div className="absolute h-[80vh] mx-auto px-4 w-full left-0 flex items-center justify-center flex-col text-center">
+        <div className="absolute h-[80vh] z-[9] mx-auto px-4 w-full left-0 flex items-center justify-center flex-col text-center">
             <h1 className="text-[2rem] md:text-8xl font-bold text-white">
                 About Skynet Silicon
             </h1>

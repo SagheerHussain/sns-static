@@ -70,7 +70,7 @@ const PricingPackage = ({
 
     return (
         <>
-            <section id='pricing_section' className={`${isClick ? "h-full overflow-hidden" : "min-h-[100%]"} z-[9] bg-[#00042a] relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[50vh] before:z-[-1] before:bg-gradient-to-r from-[rgba(72,135,231,1)] to-[rgba(135,63,231,1)] masked-image  after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[40vh] after:z-[-1] after:bg-gradient-to-r`}>
+            <section id='pricing_section' className={`${isClick ? "h-full overflow-hidden" : "min-h-[100%]"} z-[9] bg-[#000] relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[50vh] before:z-[-1] before:bg-gradient-to-r from-[#111] to-[#111] masked-image  after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[40vh] after:z-[-1] after:bg-gradient-to-r`}>
                 <div className="container max-w-[1280px]">
                     <div className="pricing_package_content pt-[200px] pb-[80px]">
                         <div className="pricing_package_intro flex flex-col items-center mt-16 text-center">
@@ -78,11 +78,11 @@ const PricingPackage = ({
                             <p className='text-white text-xl font-semibold mt-[16px] max-w-[1000px]'>Get transparent pricing for web design, development, and marketing with Skynet Silicon. Estimate costs effortlessly and start your digital journey today</p>
                         </div>
                         <div className="flex lg:flex-row flex-col pricing_package_features_list mt-14 ">
-                            <div className="max-w-full lg:max-w-[25%] rounded-[25px] lg:me-[2%] max-h-fit pricing_package_select_feature relative bg-gradient-to-r from-[rgba(15,73,144,1)] to-[rgba(70,35,134,1)] p-4 mb-4">
+                            <div className="max-w-full lg:max-w-[25%] rounded-[25px] lg:me-[2%] max-h-fit pricing_package_select_feature relative bg-gradient-to-r from-[#060606] to-[#060606] p-4 mb-4">
                                 <CategorySelection onCategoryChange={handleCategory} selectedCategory={selectedCategory} categories={categories} />
                             </div>
 
-                            <div className="max-w-full lg:w-[75%] rounded-[25px] pricing_package_check_list  bg-[#131848] py-10 px-sm-14 px-10">
+                            <div className="max-w-full lg:w-[75%] rounded-[25px] pricing_package_check_list  bg-[#060606] py-10 px-sm-14 px-10">
 
                                 <h2 className='text-white text-3xl font-bold mb-14'><span className='text-[#0ad5f1]'>{selectedCategory}</span> Cost Calculator</h2>
 
@@ -99,7 +99,7 @@ const PricingPackage = ({
                                 {
                                     pricingFeatures.map((feature, index) => {
                                         return (
-                                            <div className="pricing_package_check_list_box mb-[1rem] border-b-[1px] border-b-[#1092fd] border-dashed row flex items-center" key={index}>
+                                            <div className="pricing_package_check_list_box mb-[1rem] border-b-[1px] border-b-[#04e4ff] border-dashed row flex items-center" key={index}>
                                                 <div className="feature_button order-2 order-md-1 col-6 col-md-2 col-xl-1">
                                                     <Space direction="vertical">
                                                         <Switch onChange={() => handleChange(index, true, false)} checkedChildren="Yes" unCheckedChildren="No" checked={feature.isChecked} />

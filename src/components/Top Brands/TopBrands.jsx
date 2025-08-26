@@ -37,7 +37,7 @@ const TopBrands = () => {
                         </div>
                     </div>
                 </div>
-                <InfiniteMovingBrands height='18vh' bgColor='' className='bg-[#000] flex flex-column justify-center items-center py-4' brand={workingBrands} />
+                <InfiniteMovingBrands height='18vh' bgColor='' className='bg-[#111] flex flex-column justify-center items-center py-4' brand={workingBrands} />
                 {/* <div className="flex justify-center mt-14">
                     <Button className='primary-btn text-white hover:text-white' label={"EXPLORE ALL SERVICES"} />
                 </div> */}

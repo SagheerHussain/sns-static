@@ -7,7 +7,7 @@ const Projects = ({ isClick }) => {
     <>
       <section
         id="featured_projects"
-        className={`bg-[#260C6E] pt-[170px] md:pt-[240px] pb-[100px] overflow-hidden relative ${
+        className={`bg-[#000] pt-[170px] md:pt-[240px] pb-[100px] overflow-hidden relative ${
           isClick ? "max-h-screen" : "min-h-full"
         }`}
       >

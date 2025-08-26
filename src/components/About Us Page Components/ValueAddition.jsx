@@ -17,7 +17,7 @@ const ValueAddition = () => {
         <div className="container">
           <div className="w-full text-center mb-10">
             <h4 className="text-[#00042a] text-3xl font-bold">Our Values</h4>
-            <p className="text-sm mt-2">
+            <p className="text-base mt-2">
               Our Leadership Values go beyond being motivational wall art. Every
               day, our debates and decisions are guided by the 11 principles.
             </p>
@@ -27,13 +27,13 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <FaHandHoldingHeart className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <FaHandHoldingHeart className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">
                     WE LOVE
                   </h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     HONESTY
                   </h3>
                 </div>
@@ -51,13 +51,13 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <LuHandshake className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <LuHandshake className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">
                     BECOME PART OF
                   </h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     FIST
                   </h3>
                 </div>
@@ -74,13 +74,13 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <GiBossKey className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <GiBossKey className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">
                     BE YOUR OWN
                   </h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     BOSS
                   </h3>
                 </div>
@@ -98,13 +98,13 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <GiRun className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <GiRun className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">
                     BE THE
                   </h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     FLASH!
                   </h3>
                 </div>
@@ -124,13 +124,13 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <GiProgression className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <GiProgression className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">
                     RAISE THE
                   </h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     BAR
                   </h3>
                 </div>
@@ -148,13 +148,13 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <FaHandHoldingHand className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <FaHandHoldingHand className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">
                     CLIENT
                   </h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     ENTHUSIAST
                   </h3>
                 </div>
@@ -172,11 +172,11 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <GiLovers className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <GiLovers className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">WE</h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     LOVE
                   </h3>
                 </div>
@@ -194,13 +194,13 @@ const ValueAddition = () => {
             <div className="lg:w-[25%] p-4">
               <div className="skynet_value_content text-center">
                 <div className="skynet_value_icon flex justify-center">
-                  <FaDoorOpen className="text-white text-5xl bg-[#1092fd] p-[10px] rounded-full" />
+                  <FaDoorOpen className="text-white text-5xl bg-[#04e4ff] p-[10px] rounded-full" />
                 </div>
                 <div className="skynet_value_title mt-2">
                   <h5 className="text-lg text-[#00042a] font-semibold">
                     ACCEPT & KEEP
                   </h5>
-                  <h3 className="text-[#1092fd] text-2xl font-bold uppercase">
+                  <h3 className="text-[#04e4ff] text-2xl font-bold uppercase">
                     EGO
                   </h3>
                 </div>

@@ -16,7 +16,7 @@ const CallToAction = () => {
 
     return (
         <>
-            <section id="call_to_action" className='bg-gradient-to-r from-[#0e4793] to-[#452189] py-20'>
+            <section id="call_to_action" className='bg-gradient-to-r from-[#000] to-[#000] py-20'>
                 <div className="container">
                     <div className="call_to_action_content text-center">
                         <h1 className='text-white text-3xl md:text-4xl lg:text-5xl font-bold'>Seeking a Quote on your {categ} project?</h1>

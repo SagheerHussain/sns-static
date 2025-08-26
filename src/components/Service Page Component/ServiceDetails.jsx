@@ -18,7 +18,7 @@ const ServiceDetails = ({
 
     return (
         <>
-            <section id="service_details" className='bg-[#00042a] py-24'>
+            <section id="service_details" className='bg-[#000] py-24'>
                 <div className="container">
 
                     <div className="lg:flex">

@@ -235,7 +235,7 @@ export default function ParticleNetwork({
   return (
     <div
       ref={containerRef}
-      className={`absolute inset-0 h-screen bg-black ${className}`}
+      className={`absolute inset-0 h-full bg-black ${className}`}
       aria-hidden="true"
     >
       {/* optional soft glows (behind canvas) */}

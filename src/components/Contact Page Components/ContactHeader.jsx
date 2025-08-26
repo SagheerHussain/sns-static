@@ -17,7 +17,7 @@ const ContactHeader = ({
     return (
         <>
             <header className={`header ${isClick ? "h-full lg:h-screen overflow-y-hidden" : "min-h-screen"} relative flex items-center justify-center`}>
-                <div className={`absolute w-full h-full bg-gradient-to-r z-[-1] from-[rgba(135,63,231,1)] to-[rgba(72,135,231,1)] opacity-100`}></div>
+                <div className={`absolute w-full h-full bg-gradient-to-r z-[-1] from-[#1a1a1a] to-[#0f0f0f] opacity-100`}></div>
                 <div className={`container lg:flex ${matches ? "pt-[100px]" : "pt-[145px]"}`}>
                     <div className="my-4 header_content px-3 lg:w-[45%] w-full lg:mb-0 mb-10">
                         <h3 className='uppercase text-white text-lg font-bold sm:text-center lg:text-left'>Powering the Digital Future</h3>

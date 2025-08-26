@@ -35,7 +35,7 @@ const Timeline = () => {
                                             <p>Skynet Silicon delivers dynamic, high-performance React.js solutions tailored to your business goals. Our expert team builds scalable, component-based user interfaces that provide a seamless experience across all devices. We specialize in creating fast, responsive, and interactive web applications that boost engagement and streamline workflows. With cutting-edge technology and continuous support, we ensure your React.js projects evolve with your business needs.</p>
                                         </div>
                                         <div className="timeline_card_btn justify-center lg:invisible lg:opacity-0 transition-all duration-100 linear">
-                                            <Button link='/contact' className="primary-btn py-0 transition-all duration-100 linear uppercase" label="Full Stack MERN Development" color='hover:text-black' bgColor='bg-gradient-to-r from-[#9be8fb] to-[#26d2fc]' />
+                                            <Button link='/contact' className="primary-btn py-0 transition-all duration-100 linear uppercase" label="Full Stack MERN Development" color='hover:text-white' bgColor='bg-gradient-to-r from-[#9be8fb] to-[#26d2fc]' />
                                         </div>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@ const Timeline = () => {
                                             <p>Skynet Silicon offers fully customized, feature-rich Android applications designed to meet your specific business objectives. Our developers craft user-friendly, secure, and scalable apps that enhance customer engagement and deliver outstanding performance. Whether you're building an e-commerce app, a social platform, or a productivity tool, we guarantee a solution optimized for success on the Android platform with ongoing updates and robust support.</p>
                                         </div>
                                         <div className="timeline_card_btn justify-center lg:invisible lg:opacity-0 transition-all duration-100 linear">
-                                            <Button link='/contact' className="primary-btn py-0 transition-all duration-100 linear uppercase" label="Full Stack App Development" color='hover:text-black' bgColor='bg-gradient-to-r from-[#defe87] to-[#8fc204]' />
+                                            <Button link='/contact' className="primary-btn py-0 transition-all duration-100 linear uppercase" label="Full Stack App Development" color='hover:text-white' bgColor='bg-gradient-to-r from-[#defe87] to-[#8fc204]' />
                                         </div>
                                     </div>
                                 </div>

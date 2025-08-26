@@ -17,6 +17,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import serviceOne from "/Images/Portfolio/service (7).webp";
 import serviceTwo from "/Images/Portfolio/service (8).webp";
 import serviceThree from "/Images/Portfolio/service (9).webp";
+import ParticleNetwork from "../ParticleNetworkAnimation";
 
 const ServiceHeader = ({
   service,
@@ -35,22 +36,34 @@ const ServiceHeader = ({
           isClick ? "md:h-screen overflow-hidden" : "md:min-h-screen"
         } h-[fit-content] relative flex items-center justify-center`}
       >
-        <div
-          className={`absolute w-full h-full bg-gradient-to-r z-[-1] from-[rgba(135,63,231,1)] to-[rgba(72,135,231,1)] opacity-100`}
-        ></div>
+        <ParticleNetwork
+          className="z-[0]"
+          options={{
+            velocity: 1,
+            density: 15000,
+            netLineDistance: 200,
+            netLineColor: "#929292",
+            particleColors: ["#aaa"],
+            spawnQuantity: 3,
+          }}
+        />
 
-        <div className="container md:flex pt-[185px]">
-          <div className="header_content z-[999] px-3 md:w-[60%] w-full">
+        {/* <div
+          className={`absolute w-full h-full bg-gradient-to-r z-[-1] from-[#161616] to-[rgba(1,1,1,1)] opacity-100`}
+        ></div> */}
+
+        <div className="container md:flex pt-[185px] z-[0]">
+          <div className="header_content px-3 md:w-[60%] w-full">
             <BreadCrumb category={service.category.name} page={"Service"} />
             <h2
-              className={`mt-6 header_primary_heading text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-bold 2xl:max-w-[1500px]`}
+              className={`inline-block mt-6 header_primary_heading text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-bold 2xl:max-w-[1500px]`}
             >
               {service.title || "Loading Service..."}
             </h2>
-            <p className="text-white text-lg mt-10">
+            <p className="text-white text-lg mt-10 inline-block">
               {service.description || "Loading Service..."}
             </p>
-            <ul className="mt-10">
+            <ul className="mt-10 inline-block">
               {service?.featured_list?.map((list, index) => (
                 <li
                   key={index}
@@ -64,7 +77,7 @@ const ServiceHeader = ({
             <div className="service_header_btn mt-10">
               <Button
                 link="/contact"
-                className="primary-white-btn"
+                className="primary-white-btn rounded-[50px]"
                 label="REQUEST A QUOTE"
               />
             </div>

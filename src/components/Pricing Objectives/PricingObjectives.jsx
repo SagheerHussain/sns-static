@@ -22,14 +22,14 @@ const PricingObjectives = () => {
         <div className="container ">
           <div className="row g-4">
             <div className="col-12">
-              <div className="pricing_features_intro text-center relative">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold 2xl:max-w-[70%] mx-auto">
+              <div className="pricing_features_intro text-center ">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl relative inline-block lg:text-6xl text-white font-bold 2xl:max-w-[70%] mx-auto">
                   Custom Web Design Costs Based on the{" "}
                   <span className="text_gradient leading-snug">
                     Goals of Each Client
                   </span>
                 </h1>
-                <p className="text-lg md:text-2xl text-white font-normal mt-5 max-w-5xl mx-auto">
+                <p className="text-lg md:text-2xl text-white font-normal relative inline-block mt-5 max-w-5xl mx-auto">
                   Every website design project has different requirements and
                   problems, which affect the project's ultimate cost. While more
                   complicated projects can cost{" "}
@@ -39,7 +39,7 @@ const PricingObjectives = () => {
                   <span className="text-[#04e4ff] font-bold">$3,000</span> to{" "}
                   <span className="text-[#04e4ff] font-bold">$5,000</span>{" "}
                 </p>
-                <p className="text-lg md:text-2xl text-white font-normal mt-5 max-w-5xl mx-auto">
+                <p className="text-lg md:text-2xl text-white font-normal relative inline-block mt-5 max-w-5xl mx-auto">
                   One of the main determinants of cost is your website's
                   technical configuration, which has a direct effect on how well
                   it performs. The total cost will inevitably rise with more

@@ -14,7 +14,7 @@
     width: 332px;
     height: 332px;
     border-radius: 50%;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 156, 255, 0.62) 0%, rgba(0, 156, 255, 0.32) 30.21%, rgba(0, 33, 76, 0) 100%) !important;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(77, 76, 76, 0.62) 0%, rgba(94, 94, 94, 0.32) 30.21%, rgba(116, 116, 117, 0.014) 100%) !important;
     filter: blur(8px);
     transform: translate(-50%, -50%) scale(1);
     opacity: .7;
