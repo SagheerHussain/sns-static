@@ -1,0 +1,33 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper img {
+    max-width: 500px;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 6px;
+    border-radius: 0;
+    background: #fff;
+    opacity: .3;
+}
+.swiper-pagination-bullet-active {
+    background: #0898ff;
+    opacity: .9;
+}

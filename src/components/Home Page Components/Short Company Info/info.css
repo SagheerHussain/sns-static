@@ -1,0 +1,60 @@
+.info-video-content:hover .info-video-icon {
+    background-color: #fff !important;
+    color: #113766 !important;
+}
+
+.info-video-content:hover .info-video-icon::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ReactModal__Overlay {
+    z-index: 999 !important;
+}
+.ReactModal__Content {
+    position: absolute;
+    inset: 30px !important;
+    border: none !important;
+}
+
+#short_company_info .short_company_info_ratings::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 1px;
+    height: 60px;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(30deg);
+    margin-left: -2.5rem;
+}
+
+@media (max-width: 1700px) {
+    .company_intro_video_after::after {
+        transform: translate(250px, -50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .company_intro_video_after::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+        height: 100%;
+        background: linear-gradient(0deg, #791BCE 25%, rgba(143, 53, 225, 0.51) 48%, rgba(143, 53, 225, 0) 100%) !important;
+        /* transition: all 0.2s; */
+        width: 100vw !important;
+    }
+}
+
+@media (max-width: 640px) {
+    #short_company_info .short_company_info_ratings::before {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ############################ 
+Custom Scrollbar
+############################ */
+@media (min-width: 992px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #777;
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+/* ############################ 
+Buttons Classes Start
+############################ */
+.primary-btn {
+    border: 4px solid;
+    border-image: linear-gradient(#913ae4, #0898ff);
+    border-image-slice: 1;
+    color: #006cae;
+    padding: .7rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 9 !important;
+    transition: all .6s ease-in-out;
+}
+
+.primary-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 500px;
+    transition: all .6s ease-in-out;
+    z-index: -1;
+    transform: rotate(-50deg) translateY(-150px);
+    opacity: 0;
+}
+
+.primary-btn:hover::after {
+    width: 600px !important;
+    opacity: 1;
+}
+
+.primary-white-btn {
+    background: white;
+    color: #006cae;
+    padding: .7rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 9 !important;
+    transition: all .6s ease-in-out;
+}
+
+.primary-white-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 500px;
+    transition: all .6s ease-in-out;
+    z-index: -1;
+    background: linear-gradient(to right, #873fe7, #1092fd);
+    transform: rotate(-50deg) translateY(-150px);
+    opacity: 0;
+}
+
+.primary-white-btn:hover::after {
+    width: 600px !important;
+    opacity: 1;
+}
+
+
+.secondary-button {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
+    padding: .7rem 1.2rem !important;
+    font-weight: 600;
+    text-shadow: none;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.secondary-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+}
+
+.secondary-button:hover::after {
+    transform: scale(1);
+}
+
+/* ############################ 
+----------  Buttons Classes End ----------
+############################ */
+.effect-design-line {
+    background: #009cff;
+    width: 100%;
+    height: 2px;
+}
+
+.text_gradient {
+    background: linear-gradient(131.8deg, #009cff 0, #9536e5 100%);
+    background-clip: border-box;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-right: 8px;
+}
+
+.bg_gradient {
+    background: linear-gradient(131.8deg, #009cff 0, #9536e5 100%);
+    transition: all .3s ease-in-out;
+    padding-right: 8px;
+}
+
+.bg_gradient:hover {
+    background: linear-gradient(131.8deg, #006cae 0, #840ee4 100%);
+}
+
+.bottom_text {
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom_text img {
+    opacity: .04;
+}
+
+
+
+
+.selector {
+    position: relative;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.selector-item {
+    height: 100%;
+}
+
+.selector-item_radio {
+    appearance: none;
+    display: none;
+}
+
+.selector-item_label {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 9999px;
+    line-height: 400%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition-duration: .5s;
+    transition-property: transform, box-shadow;
+    transform: none;
+    color: #fff;
+}
+.selector-item_radio:checked+.selector-item_label {
+    background-color: #1092fd;
+    color: #fff;
+    transform: translateY(-2px);
+}

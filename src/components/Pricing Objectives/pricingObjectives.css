@@ -1,0 +1,38 @@
+.pricing_features {
+    background: url("https://www.digitalsilk.com/wp-content/uploads/2024/09/Custom_Web_Design_Pricing.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.pricing_features_list {
+    position: relative;
+}
+.pricing_features_list::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    top: 0;
+    left: -4%;
+    height: 50vw;
+    display: inline-block;
+    background: linear-gradient(94deg, rgba(59, 123, 206, 0) -2.27%, #3B7BCE 30.87%);
+}
+.pricing_features_list_after::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    right: -4%;
+    height: 50vw;
+    display: inline-block;
+    background: linear-gradient(94deg, rgba(59, 123, 206, 0) -2.27%, #3B7BCE 30.87%);
+}
+
+@media (max-width: 1024px) {
+    .pricing_features_list_after::after,
+    .pricing_features_list::before {
+        display: none !important;
+    }
+}

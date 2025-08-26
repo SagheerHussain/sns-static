@@ -1,0 +1,19 @@
+/* Blurry Linear Gradient */
+.masked-image::after {
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.masked-image::before {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+/* Ant Design Switch Button */
+.ant-space-item button {
+    scale: 1.5;
+}
+.ant-switch-checked {
+    background: #04e4ff !important;
+}
+.Mui-checked {
+    color: #04e4ff !important;
+}

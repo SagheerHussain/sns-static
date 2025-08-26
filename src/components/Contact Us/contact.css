@@ -1,0 +1,95 @@
+#contact {
+    background: radial-gradient(circle, rgba(13, 56, 109, 1) 13%, rgba(37, 20, 98, 1) 34%, rgba(18, 21, 58, 1) 72%);
+}
+
+#contact .follow-us h5::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 2px;
+    background-color: #0ad5f1;
+    margin-right: 15px;
+}
+
+#contact form textarea {
+    height: 200px;
+}
+
+
+#contact .input-group::after,
+#contact .flag_dropdown_after::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255, .4);
+}
+#contact .input-group::after {
+    transform: translateY(-20px);
+}
+
+#contact .flag_dropdown_after::after {
+    transform: translateY(10px);
+}
+
+#contact .input-group-text {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: var(--bs-border-radius);
+    margin-bottom: 1.5rem;
+    margin-right: .4rem;
+    background: none !important;
+    border: none !important;
+    line-height: none !important;
+}
+
+#contact .input-group-textarea::after {
+    transform: translateY(0px) !important;
+}
+
+#contact .input-group-textarea-text {
+    margin-bottom: 8.8rem !important;
+}
+
+#contact .flag-dropdown {
+    border: none !important;
+}
+
+
+#contact .contact_form .flag-dropdown,
+#contact .contact_form .selected-flag:hover,
+#contact .contact_form .react-tel-input .flag-dropdown.open .selected-flag {
+    background: none !important;
+}
+
+#contact .contact_form .selected-flag {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 0 !important;
+}
+
+#contact .contact_form .react-tel-input .flag {
+    scale: 1.7;
+}
+.react-tel-input .selected-flag .arrow {
+    border-top: 3px solid #fff !important;
+}
+
+#contact .contact_form .flag-dropdown.open ul.country-list li.search {
+    border-bottom: 1px solid #1092fd;
+    width: 100%;
+    z-index: 99
+}
+
+#contact .contact_form .flag-dropdown.open ul.country-list li.search input.search-box {
+    color: #000 !important;
+}
+#contact .contact_form .form-select {
+    filter: brightness(1000);
+}

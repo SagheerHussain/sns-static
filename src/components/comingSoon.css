@@ -1,0 +1,88 @@
+#comingSoon {
+    height: 100vh;
+    width: 100vw;
+    background-color: #010101;
+    position: relative;
+}
+
+.coming-soon-effect {
+    background: url("https://img.freepik.com/free-vector/shining-flashlight-darkness_1308-168866.jpg");
+    background-position: center right;
+    background-size: contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.coming-soon-logo svg {
+    animation: infiniteFlip 3s infinite ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes infiniteFlip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+.coming-soon-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.coming-soon-content h1 {
+    background: linear-gradient(90deg, #add8e6, #87ceeb, #4682b4, #1e90ff, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+
+.coming-soon-content h5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4c86d21a;
+}
+
+.coming-soon-content p {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.coming-soon-content .coming-soon-button {
+    background: linear-gradient(to right, #92cfe3, #1e90ff);
+    transition: all 2s ease-in-out;
+    display: inline-block;
+}
+.coming-soon-content .coming-soon-button a:hover {
+    background: linear-gradient(to right, #73cfee, #037ffc) !important;
+}
+
+.coming-soon-logo {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.coming-soon-logo img {
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .coming-soon-content {
+        text-align: center;
+    }
+}

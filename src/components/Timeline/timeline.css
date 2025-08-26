@@ -1,0 +1,45 @@
+.timeline_card:hover .timeline_card_btn {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.timeline_card:hover .timeline_card_btn button {
+    padding: 1rem 2.5rem !important;
+}
+.timeline_card::after {
+    content: "";
+    display: block;
+    width: 40vw;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: all .6s ease;
+}
+.timeline_card:hover::after {
+    height: 100%;
+    width: 50vw;
+    opacity: 1;
+}
+
+@media (max-width: 1023px) {
+    .timeline_card {
+        overflow: hidden;
+    }
+    .timeline_card::after {
+        display: none !important;
+    }
+    .timeline_card_btn button {
+        padding: 1rem 2.5rem !important;
+    }
+}
+@media (max-width: 640px) {
+    .timeline_card_content {
+        text-align: center;
+    }
+    .timeline_card_btn {
+        display: flex;
+        justify-content: center;
+    }
+}

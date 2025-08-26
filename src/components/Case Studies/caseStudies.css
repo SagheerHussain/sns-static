@@ -1,0 +1,164 @@
+.case_studies .case_studies_tabs_content .case_studies_tab_panal_effect_logo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    opacity: .1;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+}
+.case_studies_tab_panal_effect_logo-hp::after {
+    background: url("https://www.digitalsilk.com/wp-content/uploads/2022/07/bo-logo-dark.svg");
+}
+.case_studies_tab_panal_effect_logo-xerox::after {
+    background: url("https://www.digitalsilk.com/wp-content/uploads/2022/07/xerox-logo-dark.svg");
+}
+.case_studies_tab_panal_effect_logo-doForms::after {
+    background: url("https://www.digitalsilk.com/wp-content/uploads/2022/11/doForms-logo-dark-blue.svg");
+}
+.case_studies_tab_panal_effect_logo-fieldEdge::after {
+    background: url("https://www.digitalsilk.com/wp-content/uploads/2022/11/FieldEdge-logo-dark-blue.svg");
+}
+.case_studies_tab_panal_effect_logo-miami::after {
+    background: url("https://www.digitalsilk.com/wp-content/uploads/2022/11/MCDS-logo-dark-blue.svg");
+}
+
+.case_studies .case_studies_tabs_content .case_studies_tabs_content_tab_panal .case_studies_tab_panal_effect::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 32vw;
+    height: 100%;
+    z-index: -1;
+}
+.case_studies_tab_panal_effect_img_one::before {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://www.digitalsilk.com/wp-content/uploads/2022/10/cc-preview2.jpg') !important;
+}
+.case_studies_tab_panal_effect_img_two::before {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://www.digitalsilk.com/wp-content/uploads/2022/10/xerox-bg-tall.jpg') !important;
+}
+.case_studies_tab_panal_effect_img_three::before {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://www.digitalsilk.com/wp-content/uploads/2022/11/Web-design-case-study-Doforms.jpg') !important;
+}
+.case_studies_tab_panal_effect_img_four::before {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://www.digitalsilk.com/wp-content/uploads/2022/11/fieldedge-main.jpg') !important;
+}
+.case_studies_tab_panal_effect_img_five::before {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://www.digitalsilk.com/wp-content/uploads/2022/11/Web-design-case-study-mcds.jpg') !important;
+}
+
+.case_studies .MuiTabs-indicator {
+    display: none !important;
+}
+
+.case_studies .case_studies_tabs .case_studies_tabs_list a {
+    position: relative;
+    border: none;
+    padding: 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: visible !important;
+}
+.case_studies .case_studies_tabs .MuiButtonBase-root {
+    display: block;
+}
+.case_studies .case_studies_tabs .case_studies_tabs_list a::after,
+.case_studies .case_studies_tabs .case_studies_tabs_list button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #efefef;
+    transform: translateY(0px);
+    transition: all .6s ease-in-out;
+}
+.case_studies .case_studies_tabs .case_studies_tabs_list a.Mui-selected::after,
+.case_studies .case_studies_tabs .case_studies_tabs_list button.Mui-selected::after {
+    background-color: #15a4d4;
+}
+
+.case_studies .case_studies_tabs .case_studies_tabs_list a img,
+.case_studies .case_studies_tabs .case_studies_tabs_list button img {
+    filter: brightness(1000%) saturate(0);
+    display: block;
+    transform: translate(0px, 0px);
+}
+.case_studies .case_studies_tabs .case_studies_tabs_list a.Mui-selected img,
+.case_studies .case_studies_tabs .case_studies_tabs_list button.Mui-selected img {
+    filter: hue-rotate(50deg) saturate(5) brightness(.9) !important;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .case_studies .case_studies_tabs_content .case_studies_tabs_content_tab_panal_effect::before {
+        width: 100vw;
+        left: 0;
+    } 
+    .case_studies .case_studies_tabs .case_studies_tabs_list a,
+    .case_studies .case_studies_tabs .case_studies_tabs_list button {
+        margin: auto;
+    }
+    .case_studies .case_studies_tabs .case_studies_tabs_list a::after,
+    .case_studies .case_studies_tabs .case_studies_tabs_list button::after {
+        display: none !important;
+    }
+    .case_studies .case_studies_tabs_content .case_studies_tabs_content_tab_panal .case_studies_tab_panal_effect::before {
+        display: none;
+    } 
+    .case_studies .case_studies_tabs .case_studies_tabs_list a,
+    .case_studies .case_studies_tabs .case_studies_tabs_list button {
+        background: linear-gradient(131.8deg, #009cff 0, #9536e5 100%);
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        border-radius: 20px;
+        z-index: 999 !important;
+    }
+    .case_studies .case_studies_tabs .case_studies_tabs_list a img,
+    .case_studies .case_studies_tabs .case_studies_tabs_list button img {
+        margin: 0 auto;
+    }
+    .case_studies .case_studies_tabs_content .case_studies_tab_panal_effect_logo::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .case_studies .case_studies_tabs .case_studies_tabs_list a.Mui-selected img,
+    .case_studies .case_studies_tabs .case_studies_tabs_list button.Mui-selected img {
+        filter: hue-rotate(10deg) saturate(2) brightness(3) !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .case_studies .case_studies_tabs_content .case_studies_tab_panal_effect_logo::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
