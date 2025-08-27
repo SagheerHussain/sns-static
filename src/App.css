@@ -166,6 +166,8 @@ Buttons Classes Start
 
 .bottom_text img {
     opacity: .04;
+    width: 100vw;
+
 }
 
 

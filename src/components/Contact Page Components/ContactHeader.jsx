@@ -4,6 +4,7 @@ import southwestSolar from "/Images/Brands/remove bg brands/7.png"
 import southwestRoofers from "/Images/Brands/remove bg brands/5.png"
 import unitedRemodeling from "/Images/Brands/remove bg brands/3.png"
 import { useMediaQuery } from '@mui/material';
+import logo from "/Images/logo-white.svg"
 
 const ContactHeader = ({
     minHeight = "h-screen",
@@ -55,7 +56,7 @@ const ContactHeader = ({
                         <RequestQuote />
                     </div>
                     <div className='bottom_text lg:block hidden'>
-                        <img src="http://localhost:5173/src/assets/logo-white.png" alt="" />
+                        <img src={logo} alt="" />
                     </div>
                 </div>
             </header>
