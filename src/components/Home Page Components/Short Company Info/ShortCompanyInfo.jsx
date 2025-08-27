@@ -3,7 +3,7 @@ import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { CompanyIntroVideo } from "../../index";
 import { GiVibratingShield } from "react-icons/gi";
 import { IoStar } from "react-icons/io5";
-import solutionImg from "/Images/web-designs-with-trophy.png.webp";
+import solutionImg from "/Images/info.webp";
 import "./info.css";
 
 const Info = () => {

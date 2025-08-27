@@ -12,6 +12,7 @@ import redesign_web_image from "/Images/Services/website_redesign-min.webp";
 import ecommerce_web_image from "/Images/Services/e_commerce_design-min.webp";
 import "./services.css";
 import { Link } from "react-router-dom";
+import serviceImage from "/Images/service.png";
 
 const Services = ({ title, description, services = [], ...props }) => {
   return (
@@ -33,7 +34,7 @@ const Services = ({ title, description, services = [], ...props }) => {
                 <p className="text-white text-lg mt-5">{description}</p>
                 <img
                   className="img-fluid mt-20"
-                  src="https://www.digitalsilk.com/wp-content/uploads/2024/09/Explore-Our-Web-Design-Services-1.png.webp"
+                  src={serviceImage}
                   alt=""
                 />
               </div>

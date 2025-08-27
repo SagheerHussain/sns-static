@@ -1,6 +1,7 @@
 import React from 'react';
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 import "./subscribe.css";
+import subscribeImage from "/Images/subscribe.png"
 
 const Subscribe = () => {
     return (
@@ -22,8 +23,8 @@ const Subscribe = () => {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="subscribe-img">
-                                    <img src="https://www.digitalsilk.com/wp-content/uploads/2024/12/digitalsilk_whitepaper_2025-1024x768.png.webp" alt="" />
+                                <div className="subscribe-img w-full">
+                                    <img src={subscribeImage} alt="" />
                                 </div>
                             </div>
                         </div>
