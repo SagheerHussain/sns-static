@@ -1,12 +1,14 @@
 import React from 'react';
 import EyeRotate from "./EyeRotate";
 import { Link } from 'react-router-dom';
+import startProject from "/Images/startProject.jpg"
 
 const ReadyToStartProject = () => {
     return (
         <>
-            <section id="ready_to_start_project" className='py-20 bg-[#000] relative'>
+            <section id="ready_to_start_project" className='py-20 relative' style={{ backgroundImage: `url(${startProject})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                 <div className="container">
+                    <div className="overlay absolute top-0 left-0 w-full h-full bg-[#000] opacity-80"></div>
                     <div className="read_project_title relative">
                         <div className="lg:block hidden lg:absolute lg:top-[0%] lg:left-[50%] lg:-translate-x-[50%] lg:-translate-y-[0%]">
                             <EyeRotate margin='lg:mt-0 mt-[5%]' w_1="w-[100px] sm:w-[150px] lg:w-[100px]" h_1="h-[100px] sm:h-[150px] lg:h-[100px]" w_2="w-[70px] sm:w-[100px] lg:w-[60px]" h_2="h-[70px] sm:h-[100px] lg:h-[60px]" />
