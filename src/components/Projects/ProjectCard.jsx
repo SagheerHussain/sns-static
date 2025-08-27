@@ -23,7 +23,7 @@ const ProjectCard = ({ project, index }) => {
                         </div>
                         {/* Animated heading */}
                         <h2
-                            className={`text-5xl sm:text-6xl md:text-7xl lg:text-4xl overflow-hidden text-[#04e4ff] m-0 uppercase font-semibold absolute top-1/2 whitespace-nowrap featured-project__headline pointer-events-none ${index % 2 === 0 ? "right-[50%]" : "left-[50%]"}`}
+                            className={`text-5xl sm:text-6xl md:text-7xl lg:text-4xl overflow-hidden text-[#00adce] m-0 uppercase font-semibold absolute top-1/2 whitespace-nowrap featured-project__headline pointer-events-none ${index % 2 === 0 ? "right-[50%]" : "left-[50%]"}`}
                             style={{ transform: index % 2 === 0 ? "translate(50%, -50%)" : "translate(-50%, -50%)" }}
                         >
                             <div className="splitter-wrap">

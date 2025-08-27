@@ -69,7 +69,7 @@ const ServiceHeader = ({
                   key={index}
                   className="text-white mb-3 text-lg font-medium flex items-center"
                 >
-                  <MdKeyboardDoubleArrowRight className="text-[#04e4ff] me-2 text-xl mt-px" />
+                  <MdKeyboardDoubleArrowRight className="text-[#00adce] me-2 text-xl mt-px" />
                   <span>{list}</span>
                 </li>
               ))}
@@ -77,14 +77,14 @@ const ServiceHeader = ({
             <div className="service_header_btn mt-10">
               <Button
                 link="/contact"
-                className="primary-white-btn rounded-[50px]"
+                className="secondary-button text-white"
                 label="REQUEST A QUOTE"
               />
             </div>
 
             <div className="short_company_info_ratings flex items-center my-10">
               <div className="short_company_ratings_icon">
-                <GiVibratingShield className="text-5xl text-[#04e4ff]" />
+                <GiVibratingShield className="text-5xl text-[#00adce]" />
               </div>
               <div className="short_company_ratings_description ms-3">
                 <h4 className="text-white font-medium mb-2 text-lg">

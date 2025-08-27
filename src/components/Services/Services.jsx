@@ -24,7 +24,7 @@ const Services = ({ title, description, services = [], ...props }) => {
           <div className="lg:flex g-4">
             <div className="w-full lg:w-2/5 service-intro-column">
               <div className="service-intro sticky top-0 p-[2rem]">
-                <h3 className="text-[#04e4ff] font-semibold text-xl mb-4">
+                <h3 className="text-[#00adce] font-semibold text-xl mb-4">
                   WHY SKYNET SILICON?
                 </h3>
                 <h1 className="text-white font-bold text-3xl md:text-4xl xl:text-6xl">
@@ -45,7 +45,7 @@ const Services = ({ title, description, services = [], ...props }) => {
                     className="service-detail-wrapper block absolute top-0 left-0 w-full h-full z-[-1] invisible transition-all duration-300 opacity-0 bg-white"
                     style={{ background: `url(${custom_web_image})` }}
                   ></div>
-                  <TbDeviceDesktopStar className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
+                  <TbDeviceDesktopStar className="text-white text-8xl border-2 border-[#00adce] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3 group-hover:text-[#00042a]">
                     Unique Web Design
                   </h3>
@@ -70,7 +70,7 @@ const Services = ({ title, description, services = [], ...props }) => {
                     style={{ background: `url(${redesign_web_image})` }}
                   ></div>
 
-                  <VscSettingsGear className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
+                  <VscSettingsGear className="text-white text-8xl border-2 border-[#00adce] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Redesigning a Website
                   </h3>
@@ -95,7 +95,7 @@ const Services = ({ title, description, services = [], ...props }) => {
                     style={{ background: `url(${seo_web_image})` }}
                   ></div>
 
-                  <FaMagnifyingGlassChart className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
+                  <FaMagnifyingGlassChart className="text-white text-8xl border-2 border-[#00adce] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Search Engine Optimization
                   </h3>
@@ -119,7 +119,7 @@ const Services = ({ title, description, services = [], ...props }) => {
                     style={{ background: `url(${uiux_web_image})` }}
                   ></div>
 
-                  <MdOutlineDesignServices className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
+                  <MdOutlineDesignServices className="text-white text-8xl border-2 border-[#00adce] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Graphic Design
                   </h3>
@@ -143,7 +143,7 @@ const Services = ({ title, description, services = [], ...props }) => {
                     style={{ background: `url(${ecommerce_web_image})` }}
                   ></div>
 
-                  <RiLuggageCartLine className="text-white text-8xl border-2 border-[#04e4ff] rounded-full p-3" />
+                  <RiLuggageCartLine className="text-white text-8xl border-2 border-[#00adce] rounded-full p-3" />
                   <h3 className="text-white font-bold text-3xl sm:text-4xl my-3">
                     Design and Development for Ecommerce
                   </h3>

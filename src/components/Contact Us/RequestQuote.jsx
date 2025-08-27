@@ -7,7 +7,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { categories } from "../categories";
 
 const RequestQuote = () => {
-
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [phone, setPhone] = useState("");
@@ -25,76 +24,63 @@ const RequestQuote = () => {
   const handleContactForm = async (data, event) => {
     setLoading(true);
     try {
-      recaptchaRef.current.execute();
-      if (phone.length > 3) {
-        const formData = new FormData(event.target);
+      // Step 2: Proceed with form submission only if reCAPTCHA is verified
+      const formData = new FormData(event.target);
+      formData.append("access_key", "a67bb4a4-9923-4dc9-af1f-ea08c3db4acd");
 
-        formData.append("access_key", "a67bb4a4-9923-4dc9-af1f-ea08c3db4acd");
+      const object = Object.fromEntries(formData);
+      const newData = { ...object, phone: `+${data.phone}` };
 
-        const object = Object.fromEntries(formData);
-        const newData = { ...object, phone: `+${data.phone}` };
-        const json = JSON.stringify(newData);
+      // Remove g-recaptcha-response from newData before sending
+      delete newData["g-recaptcha-response"];
 
-        const res = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: json,
-        }).then((res) => res.json());
+      const json = JSON.stringify(newData);
 
-        if (res.success) {
-          console.log("Success", res);
-          setLoading(false);
-          setError(false);
-          Swal.fire({
-            icon: "success",
-            title: "Successfully sent your form",
-          });
-        }
-      } else
+      console.log("Submitting Form Data:", json, newData); // Debugging Log
+
+      const formResponse = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+
+      const formResult = await formResponse.json();
+      console.log("Form Submission Response:", formResult);
+
+      if (formResult.success) {
+        Swal.fire({
+          icon: "success",
+          title: "Successfully sent your form",
+        });
+      } else {
         Swal.fire({
           icon: "error",
-          title: "Phone Number is required",
+          title: "Form submission failed. Please try again!",
         });
-    } catch (error) {
-      setError(error);
+      }
+
       setLoading(false);
+    } catch (error) {
+      console.error("Error:", error);
+      setLoading(false);
+      Swal.fire({
+        icon: "error",
+        title: "An error occurred. Please try again later.",
+      });
     }
   };
 
   // ReCaptcha Change
   const handleCaptchaChange = async (value) => {
-    console.log("Captcha Value:", value);
-    // Step 1: Verify reCAPTCHA with the backend
-    const recaptchaResponse = await fetch(
-      `${import.meta.env.VITE_BASE_URL}/verify-recaptcha`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: value }),
-      }
-    );
-
-    const recaptchaData = await recaptchaResponse.json();
-    console.log("reCAPTCHA Response:", recaptchaData);
-
     setCaptchaValue(value);
-
-    if (!recaptchaData.success) {
-      // Swal.fire({
-      //   icon: "error",
-      //   title: "reCAPTCHA verification failed! Try again.",
-      // });
-      setLoading(false);
-      return;
-    }
   };
-
+  
   return (
     <>
-      <h3 className="text-[#04e4ff] text-3xl font-bold">Request A Quote</h3>
+      <h3 className="text-[#00adce] text-3xl font-bold">Request A Quote</h3>
       <h2 className="text-[#000] font-bold leading-snug text-3xl mt-6">
         Maximize Your Potential With Skynet Silicon
       </h2>
@@ -210,7 +196,7 @@ const RequestQuote = () => {
         )}
 
         <ReCAPTCHA
-          sitekey="6LeD79UqAAAAAEDdrrGoxrQy1pupDv7_xhyWOtgf"
+          sitekey="6LdK6LMrAAAAAIdZPKMK0iR-OC2zPxzp_5zEIVwF"
           onChange={handleCaptchaChange}
         />
 

@@ -43,25 +43,25 @@ const EyeRotate = ({
     return (
         <div className={`eye_feature flex items-center justify-center ${margin}`}>
 
-            <div className={`eye_rotate ${w_1} ${h_1} rounded-full bg-[#fff] me-10`}>
+            <div className={`eye_rotate ${w_1} ${h_1} rounded-full bg-[#fff] me-4`}>
                 <div className={`eye_dark_circle ${w_2} ${h_2} relative left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] rounded-full bg-[#000]`}>
                     <div
                         ref={rotatingLeftEyeRef}
                         className="eye_dark_circle absolute left-1/2 top-1/2 w-full"
                         style={{ transform: 'translate(-50%, -50%) rotate(0deg)' }}
                     >
-                        <div className='w-[30px] h-[30px] rounded-full bg-[#fff]'></div>
+                        <div className='w-[20px] h-[20px] rounded-full bg-[#fff]'></div>
                     </div>
                 </div>
             </div>
-            <div className={`eye_rotate ${w_1} ${h_1} rounded-full bg-[#fff] me-10`}>
+            <div className={`eye_rotate ${w_1} ${h_1} rounded-full bg-[#fff]`}>
                 <div className={`eye_dark_circle ${w_2} ${h_2} relative left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] rounded-full bg-[#000]`}>
                     <div
                         ref={rotatingRightEyeRef}
                         className="eye_dark_circle absolute left-1/2 top-1/2 w-full"
                         style={{ transform: 'translate(-50%, -50%) rotate(0deg)' }}
                     >
-                        <div className='w-[30px] h-[30px] rounded-full bg-[#fff]'></div>
+                        <div className='w-[20px] h-[20px] rounded-full bg-[#fff]'></div>
                     </div>
                 </div>
             </div>

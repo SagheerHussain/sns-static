@@ -2,6 +2,13 @@
     background: radial-gradient(circle, rgb(5, 5, 5) 40%, rgba(5, 5, 5, 1) 78%) !important;
 }
 
+#footer a {
+    transition: all .2s ease-in-out;
+}
+#footer a:hover {
+    color: #00adce !important;
+}
+
 #footer .footer-menus-links::before {
     content: "";
     position: absolute;

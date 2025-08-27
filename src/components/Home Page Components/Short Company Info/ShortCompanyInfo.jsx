@@ -19,15 +19,15 @@ const Info = () => {
                             <h1 className='text-3xl sm:text-4xl md:text-5xl text-white font-bold'>Innovate, Elevate, Dominate – With Skynet Silicon</h1>
                             <div className="info-service mt-5">
                                 <p className='text-2xl text-white mb-4 flex items-center'>
-                                    <IoCheckmarkDoneSharp className='me-2 text-cyan-500' />
+                                    <IoCheckmarkDoneSharp className='me-2 text-[#00adce]' />
                                     <p>Solutions For Custom Web Design <span className='text_gradient ms-1'> That Increase Conversions</span></p>
                                 </p>
                                 <p className='text-2xl text-white mb-4 flex items-center'>
-                                    <IoCheckmarkDoneSharp className='me-2 text-cyan-500' />
+                                    <IoCheckmarkDoneSharp className='me-2 text-[#00adce]' />
                                     <p>Successful Marketing Initiatives  <span className='text_gradient ms-1'> To Promote Growth</span></p>
                                 </p>
                                 <p className='text-2xl text-white mb-4 flex items-center'>
-                                    <IoCheckmarkDoneSharp className='me-2 text-cyan-500' />
+                                    <IoCheckmarkDoneSharp className='me-2 text-[#00adce]' />
                                     <p>Customized Branding Techniques <span className='text_gradient ms-1'>To Increase Involvement</span></p>
                                 </p>
                             </div>
@@ -45,7 +45,7 @@ const Info = () => {
                 <div className="container pt-10">
                     <div className="short_company_info_ratings flex items-center me-5 mb-4">
                         <div className="short_company_ratings_icon">
-                            <GiVibratingShield className='text-5xl text-cyan-500' />
+                            <GiVibratingShield className='text-5xl text-[#00adce]' />
                         </div>
                         <div className="short_company_ratings_description ms-3">
                             <h4 className='text-white font-medium mb-2 text-lg'>5 Star DesignRush Reviews</h4>

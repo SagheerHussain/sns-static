@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logoSrc from "../../assets/logo-white.svg"
+import logoSrc from "/Images/logo-white.svg"
 import { Button, Logo } from "../index";
 
 const Navbar = ({

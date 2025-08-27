@@ -84,22 +84,22 @@ const PricingPackage = ({
 
                             <div className="max-w-full lg:w-[75%] rounded-[25px] pricing_package_check_list  bg-[#060606] py-10 px-sm-14 px-10">
 
-                                <h2 className='text-white text-3xl font-bold mb-14'><span className='text-[#0ad5f1]'>{selectedCategory}</span> Cost Calculator</h2>
+                                <h2 className='text-white text-3xl font-bold mb-14'><span className='text-[#00adce]'>{selectedCategory}</span> Cost Calculator</h2>
 
                                 <div className="pricing_package_check_list_title mb-[20px] flex items-center justify-between row">
                                     <div className="select_title col-6 col-md-9">
-                                        <h4 className={`text-[#04e4ff] ${isHeading ? "text-sm" : "text-base"} sm:text-base lg:text-xl uppercase font-bold me-4`}>Select:</h4>
+                                        <h4 className={`text-[#00adce] ${isHeading ? "text-sm" : "text-base"} sm:text-base lg:text-xl uppercase font-bold me-4`}>Select:</h4>
                                     </div>
                                     <div className="price_title flex items-center col-6 col-md-3 justify-center">
-                                        <h4 className={`text-[#04e4ff] ${isHeading ? "text-sm" : "text-base"} sm:text-base lg:text-xl w-[50%] uppercase font-bold  text-center`}>Hours:</h4>
-                                        <h4 className={`text-[#04e4ff] ${isHeading ? "text-sm" : "text-base"} sm:text-base lg:text-xl w-[50%] uppercase font-bold text-center`}>Price:</h4>
+                                        <h4 className={`text-[#00adce] ${isHeading ? "text-sm" : "text-base"} sm:text-base lg:text-xl w-[50%] uppercase font-bold  text-center`}>Hours:</h4>
+                                        <h4 className={`text-[#00adce] ${isHeading ? "text-sm" : "text-base"} sm:text-base lg:text-xl w-[50%] uppercase font-bold text-center`}>Price:</h4>
                                     </div>
                                 </div>
 
                                 {
                                     pricingFeatures.map((feature, index) => {
                                         return (
-                                            <div className="pricing_package_check_list_box mb-[1rem] border-b-[1px] border-b-[#04e4ff] border-dashed row flex items-center" key={index}>
+                                            <div className="pricing_package_check_list_box mb-[1rem] border-b-[1px] border-b-[#333] border-dashed row flex items-center" key={index}>
                                                 <div className="feature_button order-2 order-md-1 col-6 col-md-2 col-xl-1">
                                                     <Space direction="vertical">
                                                         <Switch onChange={() => handleChange(index, true, false)} checkedChildren="Yes" unCheckedChildren="No" checked={feature.isChecked} />
@@ -108,7 +108,7 @@ const PricingPackage = ({
                                                 <div className={`feature_text order-1 order-md-2 col-12 col-md-7 col-xl-8 ${feature.isQuantity && "flex items-center"}`}>
                                                     <h3 className='text-white text-xl font-semibold'>{feature.title}</h3>
                                                     {
-                                                        feature.isQuantity && feature.isChecked && <input type="number" onChange={(e) => handleChange(index, false, true, e.target.value)} min={1} defaultValue={feature.quantity} className='focus:bg-[#1b2c5c] focus:shadow-none text-lg w-[100px] form-control bg-[#1b2c5c] ms-[1rem] mb-[.7rem] px-4 py-[12px] rounded-[25px] text-white border-none cursor-pointer' />
+                                                        feature.isQuantity && feature.isChecked && <input type="number" onChange={(e) => handleChange(index, false, true, e.target.value)} min={1} defaultValue={feature.quantity} className='focus:bg-[#222] focus:shadow-none text-lg w-[100px] form-control bg-[#222] ms-[1rem] mb-[.7rem] px-4 py-[12px] rounded-[25px] text-white border-none cursor-pointer' />
                                                     }
                                                 </div>
                                                 <div className="feature_price order-3 col-6 col-md-3 flex items-center p-[16px] justify-between">
@@ -129,8 +129,8 @@ const PricingPackage = ({
                                         <h1 className='text-[#fff] text-3xl font-bold me-10'>Estimated Price:</h1>
                                     </div>
                                     <div className="total_prize sm:justify-end flex items-center">
-                                        <h2 className='text-[#04e4ff] text-2xl font-bold me-10'>{totalHours}Hr</h2>
-                                        <h2 className='text-[#04e4ff] text-2xl font-bold'>${totalPrize.toFixed(2)}</h2>
+                                        <h2 className='text-[#00adce] text-2xl font-bold me-10'>{totalHours}Hr</h2>
+                                        <h2 className='text-[#00adce] text-2xl font-bold'>${totalPrize.toFixed(2)}</h2>
                                     </div>
                                 </div>
                             </div>

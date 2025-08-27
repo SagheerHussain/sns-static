@@ -49,7 +49,7 @@ function FilterProjects({ isClick }) {
               <input
                 type="checkbox"
                 value={category.slug}
-                onChange={(e) => handleFilterProjects(e.target.defaultValue)}
+                onChange={(e) => handleFilterProjects(e.target.value)}
                 id={category._id}
                 className=""
               />

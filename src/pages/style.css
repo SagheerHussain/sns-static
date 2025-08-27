@@ -65,7 +65,7 @@
   animation: appear 0.5s forwards ease var(--i);
 }
 .container-full.active .navbar_menu_links .navbar_sub_menu a:hover {
-  color: #04e4ff !important;
+  color: #00adce !important;
 }
 
 @keyframes appear {

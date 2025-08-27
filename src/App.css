@@ -38,9 +38,9 @@ Buttons Classes Start
 ############################ */
 .primary-btn {
     border: 4px solid;
-    border-image: linear-gradient(#913ae4, #0898ff);
+    border-image: linear-gradient(#913ae4, #00adce);
     border-image-slice: 1;
-    color: #006cae;
+    color: #00adce;
     padding: .7rem 2.5rem;
     font-weight: 600;
     font-size: 1.4rem;
@@ -59,7 +59,7 @@ Buttons Classes Start
     width: 0;
     height: 500px;
     transition: all .6s ease-in-out;
-    background: linear-gradient(to top, #913ae4, #0898ff);
+    background: linear-gradient(to top, #913ae4, #00adce);
     z-index: -1;
     transform: rotate(-50deg) translateY(-150px);
     opacity: 0;
@@ -92,7 +92,7 @@ Buttons Classes Start
     height: 500px;
     transition: all .6s ease-in-out;
     z-index: -1;
-    background: linear-gradient(to right, #04e4ff, #1092fd);
+    background: linear-gradient(to right, #00adce, #1092fd);
     transform: rotate(-50deg) translateY(-150px);
     opacity: 0;
 }
@@ -141,7 +141,7 @@ Buttons Classes Start
 }
 
 .text_gradient {
-    background: #04E4FF;
+    background: #00adce;
     background-clip: border-box;
     color: transparent;
     -webkit-background-clip: text;

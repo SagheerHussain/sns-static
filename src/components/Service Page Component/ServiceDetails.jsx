@@ -30,7 +30,7 @@ const ServiceDetails = ({
                                     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({ isExpanded: openIndex === index });
                                     return (
                                         <div className={`service_offer_card mb-10 ${isExpanded ? "isActiveService" : ""}`} key={index}>
-                                            <button {...getToggleProps({ onClick: () => handleToggle(index) })} className='text-3xl font-bold text-[#04e4ff]'>
+                                            <button {...getToggleProps({ onClick: () => handleToggle(index) })} className='text-3xl font-bold text-[#00adce]'>
                                                 {offer.title}
                                             </button>
                                             <div {...getCollapseProps()} className='service_offer_card_content mt-3'>

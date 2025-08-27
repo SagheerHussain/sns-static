@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 
 function ColourfulText({ text }: { text: string }) {
   const colors = [
-    "rgb(4, 228, 255)",  // Light Blue
-    "rgb(4, 228, 255)",  // Sky Blue
-    "rgb(4, 228, 255)",  // Cornflower Blue
-    "rgb(4, 228, 255)",   // Steel Blue
-    "rgb(4, 228, 255)",   // Dodger Blue
-    "rgb(4, 228, 255)",    // Medium Blue
-    "rgb(4, 228, 255)",    // Royal Blue
-    "rgb(4, 228, 255)",     // Darker Royal Blue
-    "rgb(4, 228, 255)",     // Navy Blue
-    "rgb(4, 228, 255)",      // Deep Dark Blue
+    "rgb(0, 173, 206)",  // Light Blue
+    "rgb(0, 173, 206)",  // Sky Blue
+    "rgb(0, 173, 206)",  // Cornflower Blue
+    "rgb(0, 173, 206)",   // Steel Blue
+    "rgb(0, 173, 206)",   // Dodger Blue
+    "rgb(0, 173, 206)",    // Medium Blue
+    "rgb(0, 173, 206)",    // Royal Blue
+    "rgb(0, 173, 206)",     // Darker Royal Blue
+    "rgb(0, 173, 206)",     // Navy Blue
+    "rgb(0, 173, 206)",      // Deep Dark Blue
 ];
   const [currentColors, setCurrentColors] = React.useState(colors);
   const [count, setCount] = React.useState(0);

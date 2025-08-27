@@ -83,30 +83,9 @@ const Contact = () => {
   
   // ReCaptcha Change
   const handleCaptchaChange = async (value) => {
-    // Step 1: Verify reCAPTCHA with the backend
-    const recaptchaResponse = await fetch(
-      `${import.meta.env.VITE_BASE_URL}/verify-recaptcha`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: value }),
-      }
-    );
-
-    const recaptchaData = await recaptchaResponse.json();
-    console.log("reCAPTCHA Response:", recaptchaData);
-
     setCaptchaValue(value);
-
-    if (!recaptchaData.success) {
-      Swal.fire({
-        icon: "error",
-        title: "reCAPTCHA verification failed! Try again.",
-      });
-      setLoading(false);
-      return;
-    }
   };
+  
   return (
     <>
       <section id="contact" className="py-20 overflow-hidden">
@@ -116,7 +95,7 @@ const Contact = () => {
               <h4 className="text-white uppercase text-2xl font-bold mb-3">
                 Take The Silk Road To
               </h4>
-              <h1 className="text-[#04e4ff] font-bold text-4xl sm:text-5xl">
+              <h1 className="text-[#00adce] font-bold text-4xl sm:text-5xl">
                 Digitizing Your Business <br /> Growth
               </h1>
               <div className="follow-us flex items-center mt-5">
@@ -283,7 +262,7 @@ const Contact = () => {
                 )}
 
                 <ReCAPTCHA
-                  sitekey="6LeD79UqAAAAAEDdrrGoxrQy1pupDv7_xhyWOtgf"
+                  sitekey="6LdK6LMrAAAAAIdZPKMK0iR-OC2zPxzp_5zEIVwF"
                   onChange={handleCaptchaChange}
                 />
 

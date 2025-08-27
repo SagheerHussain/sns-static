@@ -23,7 +23,7 @@ const Timeline = () => {
                         </div>
                         <div className="lg:w-1/2 w-full">
                             <div className="timeline_right_section">
-                                <div className="timeline_card_react timeline_card relative z-[9] sm:flex items-center after:bg-gradient-to-r sm:hover:after:bg-gradient-to-r from-[#c6eff9] to-[#38d5fc] py-5 sm:border-l-[6px] sm:border-[#bceaf7] cursor-pointer">
+                                <div className="timeline_card_react timeline_card relative z-[9] sm:flex items-center after:bg-gradient-to-r sm:hover:after:bg-gradient-to-r from-[#c6eff9] to-[#00adce] py-5 sm:border-l-[6px] sm:border-[#bceaf7] cursor-pointer">
                                     <div className="flex justify-center">
                                         <img src="/Images/mern.png" className='rotate-[90deg] sm:-ms-14 sm:me-10 sm:mb-0 mb-[1.5rem] img-fluid max-w-52' alt="" />
                                     </div>

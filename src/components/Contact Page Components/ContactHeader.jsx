@@ -21,7 +21,7 @@ const ContactHeader = ({
                 <div className={`container lg:flex ${matches ? "pt-[100px]" : "pt-[145px]"}`}>
                     <div className="my-4 header_content px-3 lg:w-[45%] w-full lg:mb-0 mb-10">
                         <h3 className='uppercase text-white text-lg font-bold sm:text-center lg:text-left'>Powering the Digital Future</h3>
-                        <h2 className={`mt-3 header_primary_heading text-4xl sm:text-5xl xl:text-6xl text-[#1bd9eb] font-bold 2xl:max-w-[1500px] sm:text-center lg:text-left`}>
+                        <h2 className={`mt-3 header_primary_heading text-4xl sm:text-5xl xl:text-6xl text-[#00adce] font-bold 2xl:max-w-[1500px] sm:text-center lg:text-left`}>
                             Digitizing Your <br className='xl:block hidden' /> Business Growth
                         </h2>
                         <div className="flex items-center justify-between skynet_features my-14">
@@ -38,7 +38,7 @@ const ContactHeader = ({
                                 <h1 className='text-white font-bold text-[.8rem] sm:text-lg'>Execution</h1>
                             </div>
                         </div>
-                        <h3 className='relative uppercase text-white font-bold text-left realtive after:content-[""] after:inline-block after:2xl:w-[40%] after:xl:w-[30%] after:lg:w-[15%] after:md:w-[50%] after:sm:w-[40%] after:bg-[#1bd9eb] after:h-[2px] after:absolute after:right-0 after:top-[50%]'>Premium Digital Agency Recognized by</h3>
+                        <h3 className='relative uppercase text-white font-bold text-left realtive after:content-[""] after:inline-block after:2xl:w-[40%] after:xl:w-[30%] after:lg:w-[15%] after:md:w-[50%] after:sm:w-[40%] after:bg-[#00adce] after:h-[2px] after:absolute after:right-0 after:top-[50%]'>Premium Digital Agency Recognized by</h3>
                         <div className="logos flex mt-10 justify-center">
                             <div className="brand_logo">
                                 <img src={southwestSolar} alt="" />

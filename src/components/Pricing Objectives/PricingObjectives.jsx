@@ -33,11 +33,11 @@ const PricingObjectives = () => {
                   Every website design project has different requirements and
                   problems, which affect the project's ultimate cost. While more
                   complicated projects can cost{" "}
-                  <span className="text-[#04e4ff] font-bold">$5,000</span> to{" "}
-                  <span className="text-[#04e4ff] font-bold">$8,000</span> or
+                  <span className="text-[#00adce] font-bold">$5,000</span> to{" "}
+                  <span className="text-[#00adce] font-bold">$8,000</span> or
                   more. a simple project usually costs between{" "}
-                  <span className="text-[#04e4ff] font-bold">$3,000</span> to{" "}
-                  <span className="text-[#04e4ff] font-bold">$5,000</span>{" "}
+                  <span className="text-[#00adce] font-bold">$3,000</span> to{" "}
+                  <span className="text-[#00adce] font-bold">$5,000</span>{" "}
                 </p>
                 <p className="text-lg md:text-2xl text-white font-normal relative inline-block mt-5 max-w-5xl mx-auto">
                   One of the main determinants of cost is your website's
@@ -48,7 +48,7 @@ const PricingObjectives = () => {
                 <div className="pricing_features_btn flex justify-center mt-5">
                   <a
                     href="#contact"
-                    className="rounded-[50px] primary-white-btn uppercase bg-[white] hover:text-white"
+                    className="secondary-button text-white"
                   >
                     TALK TO US
                   </a>
