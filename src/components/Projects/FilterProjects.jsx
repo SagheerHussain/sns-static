@@ -6,24 +6,13 @@ import { ProjectCard } from "../index";
 import { portfolios } from "../projects";
 import { categories } from "../projects";
 
-function FilterProjects({ isClick }) {
+function FilterProjects({ isClick, selectedCategories, handleFilterProjects }) {
   // State Variables
-  const [selectedCategories, setSelectedCategories] = useState([]);
   const [open, setOpen] = useState(false);
   
   // Handle Drawer
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
-  };
-
-  //   Filter Projects
-  const handleFilterProjects = (category) => {
-    setSelectedCategories(
-      (prev) =>
-        prev.includes(category)
-          ? prev.filter((c) => c !== category) // Remove category if already selected
-          : [...prev, category] // Add category if not selected
-    );
   };
 
   const filteredProjects =
@@ -38,7 +27,7 @@ function FilterProjects({ isClick }) {
   return (
     <div className="filter_projects">
       <div className="flex">
-        <div className="lg:w-[30%] xl:w-[25%] lg:block hidden border-1 border-[#c9c9c936] h-full p-4">
+        {/* <div className="lg:w-[30%] xl:w-[25%] lg:block hidden border-1 border-[#c9c9c936] h-full p-4">
           <h5 className="mb-4 fw-bold d-flex align-items-center text-zinc-300">
             Filters <IoFilterSharp className="ms-2" />
           </h5>
@@ -63,9 +52,9 @@ function FilterProjects({ isClick }) {
               </label>
             </div>
           ))}
-        </div>
+        </div> */}
 
-        <div className="w-full lg:w-[70%] xl:w-[75%] ms-[2%]">
+        <div className="w-full">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-white">
@@ -139,7 +128,7 @@ function FilterProjects({ isClick }) {
 
           <Divider style={{ backgroundColor: "#999" }} className="my-2" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 p-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3 p-3">
             {filteredProjects?.map((project, ind) => (
               <ProjectCard project={project} index={ind + 1} />
             ))}
