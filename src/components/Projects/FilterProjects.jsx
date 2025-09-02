@@ -27,33 +27,6 @@ function FilterProjects({ isClick, selectedCategories, handleFilterProjects }) {
   return (
     <div className="filter_projects">
       <div className="flex">
-        {/* <div className="lg:w-[30%] xl:w-[25%] lg:block hidden border-1 border-[#c9c9c936] h-full p-4">
-          <h5 className="mb-4 fw-bold d-flex align-items-center text-zinc-300">
-            Filters <IoFilterSharp className="ms-2" />
-          </h5>
-
-          <h6 className="text-zinc-200 mb-2 text-sm">Categories</h6>
-          {categories?.map((category, ind) => (
-            <div className=" checkbox-wrapper py-3">
-              <input
-                type="checkbox"
-                value={category.slug}
-                onChange={(e) => handleFilterProjects(e.target.value)}
-                id={category._id}
-                className=""
-              />
-              <label
-                htmlFor={category._id}
-                className="text-white"
-                key={ind}
-                // style={{ fontSize: "0.85rem" }}
-              >
-                {category?.name}
-              </label>
-            </div>
-          ))}
-        </div> */}
-
         <div className="w-full">
           <div className="flex items-center justify-between">
             <div>
@@ -80,7 +53,7 @@ function FilterProjects({ isClick, selectedCategories, handleFilterProjects }) {
                     width: 300,
                     height: "100vh",
                     padding: "2rem 1rem",
-                    backgroundColor: "#00042a",
+                    backgroundColor: "#111",
                     zIndex: 99999,
                   }}
                   role="presentation"

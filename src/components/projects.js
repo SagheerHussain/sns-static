@@ -234,6 +234,42 @@ export const portfolios = [
     link: "https://taefficienthomes.com/",
     createdAt: "2025-05-07T10:06:01.038Z",
     __v: 0,
+  },
+  {
+    _id: "681b308931949a75073fc229",
+    src: "/Images/projects/11.png",
+    categories: [
+      {
+        _id: "679c65288b04ccb2dea6af07",
+        name: "Flutter",
+        slug: "flutter",
+        createdAt: "2025-01-31T05:52:40.652Z",
+        __v: 0,
+      },
+    ],
+    title: "Otobix",
+    description: "",
+    link: "https://otobix.in/",
+    createdAt: "2025-05-07T10:06:01.038Z",
+    __v: 0,
+  },
+  {
+    _id: "681b308931949a75073fc229",
+    src: "/Images/projects/12.png",
+    categories: [
+      {
+        _id: "679c65288b04ccb2dea6af07",
+        name: "Flutter",
+        slug: "flutter",
+        createdAt: "2025-01-31T05:52:40.652Z",
+        __v: 0,
+      },
+    ],
+    title: "Joya",
+    description: "",
+    link: "https://otobix.in/",
+    createdAt: "2025-05-07T10:06:01.038Z",
+    __v: 0,
   }
 ];
 

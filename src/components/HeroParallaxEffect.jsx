@@ -14,104 +14,104 @@ export const products = [
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (1).webp",
+            "/Images/About Portfolio/1.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (2).webp",
+            "/Images/About Portfolio/2.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (3).webp",
+            "/Images/About Portfolio/3.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (4).webp",
+            "/Images/About Portfolio/4.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (5).webp",
+            "/Images/About Portfolio/5.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (6).webp",
+            "/Images/About Portfolio/6.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (7).webp",
+            "/Images/About Portfolio/7.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (8).webp",
+            "/Images/About Portfolio/8.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (9).webp",
+            "/Images/About Portfolio/9.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (10).webp",
+            "/Images/About Portfolio/10.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (1).webp",
+            "/Images/About Portfolio/11.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (2).webp",
+            "/Images/About Portfolio/12.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (3).webp",
+            "/Images/About Portfolio/1.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (4).webp",
+            "/Images/About Portfolio/2.png",
     },
     { 
         _id: 1,
         title: "Moonbeam",
         category: "",
         src:
-            "/Images/Portfolio/portfolio (5).webp",
+            "/Images/About Portfolio/3.png",
     }
 ];

@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 const HeaderOverlay = React.memo(() => {
   
   const portfolio = [
-    { id: 1, src: "/Images/Portfolio/portfolio (1).webp" },
-    { id: 2, src: "/Images/Portfolio/portfolio (2).webp" },
-    { id: 3, src: "/Images/Portfolio/portfolio (3).webp" },
-    { id: 4, src: "/Images/Portfolio/portfolio (4).webp" },
-    { id: 5, src: "/Images/Portfolio/portfolio (5).webp" },
-    { id: 6, src: "/Images/Portfolio/portfolio (6).webp" },
-    { id: 7, src: "/Images/Portfolio/portfolio (7).webp" },
-    { id: 8, src: "/Images/Portfolio/portfolio (8).webp" },
-    { id: 9, src: "/Images/Portfolio/portfolio (9).webp" },
-    { id: 10, src: "/Images/Portfolio/portfolio (10).webp" },
+    { id: 1, src: "/Images/Home Images/159.webp" },
+    { id: 2, src: "/Images/Home Images/160.webp" },
+    { id: 3, src: "/Images/Home Images/161.webp" },
+    { id: 4, src: "/Images/Home Images/162.webp" },
+    { id: 5, src: "/Images/Home Images/163.webp" },
+    { id: 6, src: "/Images/Home Images/164.webp" },
+    { id: 7, src: "/Images/Home Images/165.webp" },
+    { id: 8, src: "/Images/Home Images/166.webp" },
+    { id: 9, src: "/Images/Home Images/167.webp" },
+    { id: 10, src: "/Images/Home Images/168.webp" },
   ];
 
   // Three Columns for Image Overlays
@@ -35,7 +35,7 @@ const HeaderOverlay = React.memo(() => {
               key={_id}
               src={`${src}`}
               alt="Portfolio Image"
-              className="p-1 rounded-lg object-cover object-left-top w-[600px] h-[400px]"
+              className="p-1 rounded-[10px] object-cover object-left-top w-[600px] h-[400px]"
               loading="lazy" // Lazy loading for performance boost
             />
           ))}

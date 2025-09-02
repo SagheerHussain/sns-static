@@ -141,7 +141,7 @@ export const ProductCard = ({
         >
             <img
                 src={`${portfolio.src}`}
-                className="object-cover object-left-top absolute inset-0 h-[600px] w-[600px]"
+                className="object-cover object-left-top absolute inset-0 h-[600px] w-[600px] rounded-[10px]"
                 alt={portfolio.title}
                 loading="lazy"
             />

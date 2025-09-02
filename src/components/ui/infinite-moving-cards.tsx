@@ -101,16 +101,16 @@ export const InfiniteMovingCards = ({
             :
             <li
               key={item.src}
-              className={`${itemClass} relative p-6 max-w-lg mx-auto text-white overflow-hidden bg-[#111]`}
+              className={`${itemClass} relative p-6 max-w-lg mx-auto text-white overflow-hidden bg-[#111] rounded-[20px]`}
             >
               <div className="relative flex items-center justify-between">
                 <div className="company_info">
                   <h3 className="text-zinc-100">{item.name}</h3>
                   <h4 className="text-sm text-zinc-400">{item.tagline}</h4>
                 </div>
-                <img src={item.src} className="max-w-full " alt="" loading="lazy" />
+                {/* <img src={item.src} className="max-w-full " alt="" loading="lazy" /> */}
               </div>
-              <blockquote className="text-zinc-100 pt-3">"{item.quote}"</blockquote>
+              <blockquote className="text-zinc-100 pt-3">"{item.quote?.slice(0, 400)} {item.quote?.length < 400 ? "" : "..."}"</blockquote>
             </li>
         ))}
 

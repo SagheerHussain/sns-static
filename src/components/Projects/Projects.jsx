@@ -4,18 +4,36 @@ import FilterProjects from "./FilterProjects";
 import { categories } from "../projects";
 import { IoFilterSharp } from "react-icons/io5";
 
+const ALL = "all";
+
 const Projects = ({ isClick }) => {
+  const [selectedCategories, setSelectedCategories] = useState([ALL]); // default: All selected
 
-   const [selectedCategories, setSelectedCategories] = useState([]);
+  const handleFilterProjects = (value) => {
+    setSelectedCategories((prev) => {
+      // If ALL clicked -> only ALL
+      if (value === ALL) return [ALL];
 
-  const handleFilterProjects = (category) => {
-    setSelectedCategories(
-      (prev) =>
-        prev.includes(category)
-          ? prev.filter((c) => c !== category) // Remove category if already selected
-          : [...prev, category] // Add category if not selected
-    );
+      // If ALL is selected, start from empty
+      let next = prev.includes(ALL) ? [] : [...prev];
+
+      // Toggle value
+      if (next.includes(value)) {
+        next = next.filter((v) => v !== value);
+      } else {
+        next.push(value);
+      }
+
+      // If nothing left, revert to ALL
+      if (next.length === 0) return [ALL];
+      return next;
+    });
   };
+
+  // Effective filters to pass down (ALL means no filter)
+  const effectiveSelected = selectedCategories.includes(ALL)
+    ? []
+    : selectedCategories;
 
   return (
     <>
@@ -35,31 +53,76 @@ const Projects = ({ isClick }) => {
               Filters <IoFilterSharp className="ms-2" />
             </h5>
 
-            {/* <h6 className="text-zinc-200 mb-2 text-sm">Categories</h6> */}
-            <div className="flex justify-between items-center">
-              {categories?.map((category, ind) => (
-                <div className=" checkbox-wrapper py-3">
-                  <input
-                    type="checkbox"
-                    value={category.slug}
-                    onChange={(e) => handleFilterProjects(e.target.value)}
-                    id={category._id}
-                    className=""
-                  />
-                  <label
-                    htmlFor={category._id}
-                    className="text-white"
-                    key={ind}
-                    // style={{ fontSize: "0.85rem" }}
-                  >
-                    {category?.name}
-                  </label>
-                </div>
-              ))}
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              {/* ALL chip */}
+              {(() => {
+                const id = "cat-all";
+                const isChecked = selectedCategories.includes(ALL);
+                return (
+                  <div key={id} className="py-2">
+                    <input
+                      id={id}
+                      type="checkbox"
+                      value={ALL}
+                      checked={isChecked}
+                      onChange={() => handleFilterProjects(ALL)}
+                      className="peer sr-only"
+                    />
+                    <label
+                      htmlFor={id}
+                      className="
+                        block text-sm text-center px-20 py-2 rounded-full font-semibold transition duration-300 cursor-pointer
+                        text-white hover:bg-zinc-800 hover:text-white border-1 border-[#ffffff3a]
+                        peer-checked:border-[#ffffff3a] peer-checked:bg-[#222]
+                        peer-checked:text-white
+                      "
+                    >
+                      All
+                    </label>
+                  </div>
+                );
+              })()}
+
+              {/* Category chips */}
+              {categories?.map((category, ind) => {
+                const id = `cat-${category._id || category.slug || ind}`;
+                const value = category.slug;
+                const isAllOn = selectedCategories.includes(ALL);
+                const isChecked =
+                  !isAllOn && selectedCategories.includes(value);
+
+                return (
+                  <div key={id} className="py-2">
+                    <input
+                      id={id}
+                      type="checkbox"
+                      value={value}
+                      checked={isChecked}
+                      onChange={() => handleFilterProjects(value)}
+                      className="peer sr-only"
+                    />
+                    <label
+                      htmlFor={id}
+                      className="
+                        block text-sm text-center px-20 py-2 rounded-full font-semibold transition duration-300 cursor-pointer
+                        text-white hover:bg-zinc-800 hover:text-white border-1 border-[#ffffff3a]
+                        peer-checked:border-[#ffffff3a] peer-checked:bg-[#222]
+                        peer-checked:text-white
+                      "
+                    >
+                      {category?.name}
+                    </label>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
-          <FilterProjects isClick={isClick} selectedCategories={selectedCategories} handleFilterProjects={handleFilterProjects}  />
+          <FilterProjects
+            isClick={isClick}
+            selectedCategories={effectiveSelected}
+            handleFilterProjects={handleFilterProjects}
+          />
         </div>
       </section>
     </>
